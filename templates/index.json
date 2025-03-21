@@ -1,1 +1,496 @@
-{"sections":{"slideshow_UJkzzk":{"type":"slideshow","blocks":{"slide_KDXfdB":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/and_13023063-711a-40f3-857a-183762858a0c.jpg","heading":"","heading_size":"h1","subheading":"","button_label":"","link":"","button_style_secondary":false,"box_align":"middle-center","show_text_box":false,"text_alignment":"center","image_overlay_opacity":0,"color_scheme":"scheme-1","text_alignment_mobile":"center"}},"slide_4YCKBn":{"type":"slide","settings":{"heading":"","heading_size":"h1","subheading":"","button_label":"","link":"","button_style_secondary":false,"box_align":"middle-center","show_text_box":true,"text_alignment":"center","image_overlay_opacity":0,"color_scheme":"scheme-1","text_alignment_mobile":"center"}},"slide_iaLExd":{"type":"slide","settings":{"heading":"","heading_size":"h1","subheading":"","button_label":"","link":"","button_style_secondary":false,"box_align":"middle-center","show_text_box":true,"text_alignment":"center","image_overlay_opacity":0,"color_scheme":"scheme-1","text_alignment_mobile":"center"}}},"block_order":["slide_KDXfdB","slide_4YCKBn","slide_iaLExd"],"custom_css":[],"settings":{"layout":"full_bleed","slide_height":"medium","slider_visual":"dots","auto_rotate":true,"change_slides_speed":3,"image_behavior":"none","show_text_below":false,"accessibility_info":""}},"custom_liquid_NL4aGg":{"type":"custom-liquid","settings":{"custom_liquid":"<style>\n  \/* Banner Container Styles *\/\n  .vl-free-shipping-banner {\n    background-color: #e4e8ff;\n    margin: 0 0 20px;\n    overflow: hidden;\n    position: relative;\n  }\n\n  .vl-free-shipping-banner .banner-content {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    gap: 8px;\n    padding: 8px 12px;\n  }\n\n  .vl-free-shipping-banner svg {\n    width: 20px;\n    height: 20px;\n  }\n\n  .vl-free-shipping-banner .banner-text {\n    color: #242f66;\n    font-size: 14px;\n    font-weight: 600;\n  }\n\n  \/* Animation (Shimmer Effect) *\/\n  @keyframes vl-shimmer {\n    0% { transform: translateX(-100%); }\n    100% { transform: translateX(100%); }\n  }\n\n  .vl-free-shipping-banner::before {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background: linear-gradient(\n      -45deg,\n      transparent 0%,\n      transparent 45%,\n      rgba(255,255,255,0.5) 45%,\n      rgba(255,255,255,0.5) 48%,\n      transparent 48%,\n      transparent 50%,\n      rgba(255,255,255,0.5) 50%,\n      rgba(255,255,255,0.5) 57%,\n      transparent 57%,\n      transparent 100%\n    );\n    opacity: 0.6;\n    animation: vl-shimmer 3s ease-in-out infinite;\n  }\n\n  \/* Desktop adjustments *\/\n  @media (min-width: 1024px) {\n    .vl-free-shipping-banner {\n      margin-bottom: 32px;\n    }\n    .vl-free-shipping-banner .banner-text {\n      font-size: 16px;\n    }\n    .vl-free-shipping-banner svg {\n      width: 24px;\n      height: 24px;\n    }\n    .vl-free-shipping-banner::before {\n      animation-duration: 5s;\n    }\n  }\n\n  \/* Small screen adjustments *\/\n  @media (max-width: 380px) {\n    .vl-free-shipping-banner .banner-text {\n      font-size: 12px;\n    }\n  }\n\n  @media (max-width: 329px) {\n    .vl-free-shipping-banner .banner-text {\n      font-size: 11px;\n    }\n  }\n<\/style>\n\n<!-- Free Shipping Banner -->\n<div class=\"vl-free-shipping-banner\">\n  <div class=\"banner-content\">\n    <!-- Embedded SVG -->\n    <svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" fill=\"none\" viewBox=\"0 0 20 20\" height=\"20\" width=\"20\">\n      <path stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke=\"#242F66\" d=\"M6.87502 15.625C6.87502 15.9566 6.74332 16.2745 6.5089 16.5089C6.27448 16.7433 5.95654 16.875 5.62502 16.875C5.2935 16.875 4.97555 16.7433 4.74113 16.5089C4.50671 16.2745 4.37502 15.9566 4.37502 15.625M6.87502 15.625C6.87502 15.2935 6.74332 14.9756 6.5089 14.7412C6.27448 14.5067 5.95654 14.375 5.62502 14.375C5.2935 14.375 4.97555 14.5067 4.74113 14.7412C4.50671 14.9756 4.37502 15.2935 4.37502 15.625M6.87502 15.625H11.875M4.37502 15.625H2.81252C2.56388 15.625 2.32542 15.5263 2.1496 15.3504C1.97379 15.1746 1.87502 14.9362 1.87502 14.6875V11.875M11.875 15.625H13.75M11.875 15.625V11.875M1.87502 11.875V5.51253C1.87369 5.28434 1.95707 5.06377 2.10901 4.89351C2.26095 4.72325 2.47064 4.61542 2.69752 4.59087C5.47505 4.30256 8.27498 4.30256 11.0525 4.59087C11.5233 4.6392 11.875 5.0392 11.875 5.51253V6.31087M1.87502 11.875H11.875M16.25 15.625C16.25 15.9566 16.1183 16.2745 15.8839 16.5089C15.6495 16.7433 15.3315 16.875 15 16.875C14.6685 16.875 14.3506 16.7433 14.1161 16.5089C13.8817 16.2745 13.75 15.9566 13.75 15.625M16.25 15.625C16.25 15.2935 16.1183 14.9756 15.8839 14.7412C15.6495 14.5067 15.3315 14.375 15 14.375C14.6685 14.375 14.3506 14.5067 14.1161 14.7412C13.8817 14.9756 13.75 15.2935 13.75 15.625M16.25 15.625H17.1875C17.705 15.625 18.1284 15.205 18.0959 14.6884C17.9284 11.9364 17.0016 9.28467 15.4184 7.02753C15.2675 6.8161 15.0707 6.64171 14.8426 6.51756C14.6145 6.3934 14.3611 6.32272 14.1017 6.31087H11.875M11.875 6.31087V11.875\"\/>\n    <\/svg>\n    <span class=\"banner-text\">FREE SHIPPING on all orders<\/span>\n  <\/div>\n<\/div>","color_scheme":"","padding_top":0,"padding_bottom":0}},"image_banner":{"type":"image-banner","blocks":{"text_y6kQzi":{"type":"text","settings":{"text":"END OF WINTER SALE","text_style":"caption-with-letter-spacing"}},"heading":{"type":"heading","settings":{"heading":"-50% KORTING","heading_size":"h1"}},"text_9rjcQF":{"type":"text","settings":{"text":"Tijdelijke Winteropruiming, kortingen tot wel -50%","text_style":"body"}},"button":{"type":"buttons","disabled":true,"settings":{"button_label_1":"PRODUCTEN BEKIJKEN","button_link_1":"shopify:\/\/collections\/all","button_style_secondary_1":true,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["text_y6kQzi","heading","text_9rjcQF","button"],"disabled":true,"settings":{"image":"shopify:\/\/shop_images\/Mens_Sweater.jpg","image_overlay_opacity":50,"image_height":"large","desktop_content_position":"middle-center","show_text_box":false,"desktop_content_alignment":"center","color_scheme":"scheme-3","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":false,"show_text_below":false}},"featured_collection":{"type":"featured-collection","custom_css":["H2 {text-align: center;}",".card .card__badge {position: absolute;}",".savings {display: none;}"],"settings":{"title":"BESTSELLERS","heading_size":"h1","description":"","show_description":false,"description_style":"body","collection":"best-seller-for-home-page","products_to_show":8,"columns_desktop":4,"full_width":false,"show_view_all":true,"view_all_style":"solid","enable_desktop_slider":false,"color_scheme":"scheme-1","image_ratio":"portrait","image_shape":"default","show_secondary_image":false,"show_vendor":false,"show_rating":false,"quick_add":"none","columns_mobile":"2","swipe_on_mobile":true,"padding_top":44,"padding_bottom":28}},"collection_list_hmp8af":{"type":"collection-list","blocks":{"featured_collection_rzMey6":{"type":"featured_collection","settings":{"collection":"winter-jassen"}},"featured_collection_3z9TPa":{"type":"featured_collection","settings":{"collection":"dames-jassen"}},"featured_collection_DRgzXH":{"type":"featured_collection","settings":{"collection":"truien-vesten"}},"featured_collection_y76AGf":{"type":"featured_collection","settings":{"collection":"dames-truien-vesten"}},"featured_collection_UMCrTt":{"type":"featured_collection","disabled":true,"settings":{"collection":"womens"}},"featured_collection_p8hrMk":{"type":"featured_collection","disabled":true,"settings":{"collection":"best-seller"}},"featured_collection_MbAQwn":{"type":"featured_collection","disabled":true,"settings":{"collection":"best-seller-1"}},"featured_collection_ABmiTa":{"type":"featured_collection","disabled":true,"settings":{"collection":"mens"}},"featured_collection_zpBErq":{"type":"featured_collection","disabled":true,"settings":{"collection":"womens"}}},"block_order":["featured_collection_rzMey6","featured_collection_3z9TPa","featured_collection_DRgzXH","featured_collection_y76AGf","featured_collection_UMCrTt","featured_collection_p8hrMk","featured_collection_MbAQwn","featured_collection_ABmiTa","featured_collection_zpBErq"],"disabled":true,"custom_css":[".title-wrapper-with-link {display: flex; justify-content: center;}",".card__content {justify-items: center;}"],"settings":{"title":"CATEGORIEEN","heading_size":"h1","image_ratio":"square","columns_desktop":4,"color_scheme":"scheme-1","show_view_all":false,"columns_mobile":"2","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36}},"selluxe_icon_text_F4kdPp":{"type":"selluxe-icon-text","disabled":true,"custom_css":[],"settings":{"header_text":"","text_1":"<p><strong>UW BETROUWBARE PARTNER VOOR KWALITEIT <\/strong>Bij ons staat kwaliteit en klanttevredenheid altijd voorop. Geniet van zorgeloze aankopen, uitstekende service en producten waar u op kunt vertrouwen.<\/p>","image_1":"shopify:\/\/shop_images\/bancontact-logo-742C726BB7-seeklogo.com.png","text_2":"<p><strong>ANTWOORD OP AL UW VRAGEN BINNEN 24 UUR <\/strong>Ons team staat klaar om al uw vragen binnen 24 uur te beantwoorden en u te helpen.<\/p>","image_2":"shopify:\/\/shop_images\/TrustPilot-Single-Star-Icon-PNG_112f0886-44d9-484d-837e-0fb9ea6a4f79.png","text_3":"<p><strong>30 DAGEN BEDENKTIJD <\/strong>Na ontvangst van uw bestelling heeft u 30 dagen de tijd om te beslissen of u het product wilt houden of moeiteloos wilt retourneren.<\/p>","image_3":"shopify:\/\/shop_images\/bpost-logo-E03CD97013-seeklogo.com.png","text_4":""}},"custom_liquid_tNh6Xq":{"type":"custom-liquid","disabled":true,"settings":{"custom_liquid":"<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <style>\n    body {\n      background-color: white; \/* Set background color to white *\/\n      font-family: \"Twentieth Century Sans Serif\", sans-serif; \/* Font family *\/\n      color: black; \/* Set text color to black *\/\n      margin: 0;\n      padding: 0;\n    }\n\n    .row {\n      display: flex;\n      align-items: center; \/* Align icon and text vertically *\/\n      padding: 30px 0; \/* Add spacing between rows *\/\n      gap: 30px; \/* Add spacing between icon and text *\/\n    }\n\n    .icon-column {\n      flex: 0 0 80px; \/* Fixed width for the icon column *\/\n      display: flex;\n      justify-content: center; \/* Center the icon horizontally *\/\n      align-items: center; \/* Center the icon vertically *\/\n    }\n\n    .icon-column img {\n      max-width: 60px; \/* Adjust icon size for desktop *\/\n      height: auto;\n    }\n\n    .text-column {\n      flex: 1; \/* Text column takes remaining space *\/\n    }\n\n    .heading {\n      font-size: 14px; \/* Keep heading bold *\/\n      font-weight: bold; \/* Bold heading *\/\n      margin: 0; \/* Remove margin *\/\n    }\n\n    .description {\n      font-size: 12px; \/* Match size with heading *\/\n      margin: 5px 0 0 0; \/* Add spacing between heading and description *\/\n    }\n\n    @media (max-width: 768px) {\n      .row {\n        flex-direction: row; \/* Keep in row format for mobile *\/\n        align-items: flex-start; \/* Align icon and text at the top *\/\n        gap: 1px; \/* Reduce spacing for smaller screens *\/\n      }\n\n      .icon-column img {\n        max-width: 50px; \/* Reduce icon size for smaller screens *\/\n      }\n\n      .heading,\n      .description {\n        font-size: 12px; \/* Adjust text size for mobile *\/\n      }\n    }\n  <\/style>\n<\/head>\n<body>\n  <div class=\"row\">\n    <!-- Row 1 -->\n    <div class=\"icon-column\">\n      <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0674\/0692\/1923\/files\/bancontact-logo.png?v=1733913490\" alt=\"Bancontact\">\n    <\/div>\n    <div class=\"text-column\">\n      <div class=\"heading\">VERTROUW OP ONZE MEER DAN 20 JAAR ERVARING<\/div>\n      <div class=\"description\">\n        Al meer dan twee decennia zijn we uw betrouwbare metgezel in de wereld van mode. Ontdek het onderscheid in toewijding en betrouwbaarheid.\n      <\/div>\n    <\/div>\n  <\/div>\n\n  <div class=\"row\">\n    <!-- Row 2 -->\n    <div class=\"icon-column\">\n      <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0674\/0692\/1923\/files\/TrustPilot-Single-Star-Icon-PNG.png?v=1733913507\" alt=\"TrustPilot\">\n    <\/div>\n    <div class=\"text-column\">\n      <div class=\"heading\">24\/7 BESCHIKBAAR VOOR AL UW VRAGEN<\/div>\n      <div class=\"description\">\n        Ons team staat altijd klaar om uw vragen te beantwoorden en u te helpen.\n      <\/div>\n    <\/div>\n  <\/div>\n\n  <div class=\"row\">\n    <!-- Row 3 -->\n    <div class=\"icon-column\">\n      <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0674\/0692\/1923\/files\/10002.jpg?v=1733862377\">\n    <\/div>\n    <div class=\"text-column\">\n      <div class=\"heading\">30 DAGEN BEDENKTIJD<\/div>\n      <div class=\"description\">\n        Na ontvangst van uw bestelling heeft u 30 dagen de tijd om te beslissen of u het product wilt houden of moeiteloos wilt retourneren.\n      <\/div>\n    <\/div>\n  <\/div>\n<\/body>\n<\/html>","color_scheme":"","padding_top":0,"padding_bottom":0}},"selluxe_image_slider_gPA7ir":{"type":"selluxe-image-slider","blocks":{"image_block_YR8YFU":{"type":"image_block","settings":{"slide_image":"shopify:\/\/shop_images\/C6147-Lisette-white.png"}},"image_block_AnP47B":{"type":"image_block","settings":{"slide_image":"shopify:\/\/shop_images\/download_30_e138a4d2-43f6-4b0d-bbe7-f8c391797b29.jpg"}},"image_block_kJXbmr":{"type":"image_block","settings":{"slide_image":"shopify:\/\/shop_images\/download_10.png"}},"image_block_aAi4xn":{"type":"image_block","settings":{"slide_image":"shopify:\/\/shop_images\/123_3_1cdfd52e-379e-4b48-a4f4-d4e5125d691c.webp"}},"image_block_7BRAjK":{"type":"image_block","settings":{"slide_image":"shopify:\/\/shop_images\/123_13_9b214cef-4ec8-47e2-9ce7-1018685a9f6c.webp"}},"image_block_L4pVcq":{"type":"image_block","settings":{"slide_image":"shopify:\/\/shop_images\/123_6_16a5c378-7a43-4977-aa9e-24819888e9eb.webp"}}},"block_order":["image_block_YR8YFU","image_block_AnP47B","image_block_kJXbmr","image_block_aAi4xn","image_block_7BRAjK","image_block_L4pVcq"],"disabled":true,"settings":{"slider_title":"Ontzettend veel tevreden klanten","slider_title_alignment":"center","slider_title_size":24,"slides_per_view":5,"animation_speed":5}},"rich_text_n3aQPY":{"type":"rich-text","blocks":{"heading_aFGJYy":{"type":"heading","settings":{"heading":"14 DAGEN","heading_size":"h1"}},"heading_ptRb6V":{"type":"heading","settings":{"heading":"GELD-TERUG GARANTIE","heading_size":"h2"}},"text_wnPc8U":{"type":"text","settings":{"text":"<p>Bij Van Leiden Stijlhuis staat uw tevredenheid voorop. Als u niet volledig tevreden bent met uw aankoop, bieden wij een <strong>14 dagen geld-terug <\/strong>garantie om uw gemoedsrust te waarborgen.<\/p>"}}},"block_order":["heading_aFGJYy","heading_ptRb6V","text_wnPc8U"],"disabled":true,"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"scheme-77cb9eaa-2e8f-4c11-83fb-7dc39be798a0","full_width":true,"padding_top":0,"padding_bottom":0}},"image_banner_GfDLAM":{"type":"image-banner","blocks":{"heading_LiGJBe":{"type":"heading","settings":{"heading":"<strong>Waarom bij ons kopen?<\/strong>","heading_size":"h2"}},"text_VQ6XhC":{"type":"text","settings":{"text":"Bij Van Leiden Stijlhuis staat klanttevredenheid centraal. We streven naar uitstekende service, persoonlijke aandacht en de hoogste kwaliteit. Onze garanties zijn ontworpen om deze waarden te waarborgen. Neem gerust op elk moment contact met ons op—wij beantwoorden al uw vragen binnen 24 uur.","text_style":"body"}}},"block_order":["heading_LiGJBe","text_VQ6XhC"],"disabled":true,"custom_css":[".banner__box {max-width: 380px; min-width: 320px; border: 7px solid; border-color: #fff; box-shadow: inset 0 0 0 2px #000; padding: 30px;}"],"settings":{"image":"shopify:\/\/shop_images\/Untitled_design_7.png","image_overlay_opacity":0,"image_height":"medium","desktop_content_position":"top-left","show_text_box":true,"desktop_content_alignment":"left","color_scheme":"","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":true,"show_text_below":true}},"collapsible_content_wFRV3V":{"type":"collapsible-content","blocks":{"collapsible_row_eChPQi":{"type":"collapsible_row","settings":{"heading":"Inklapbare rij","icon":"none","row_content":"","page":""}},"collapsible_row_fmc7pT":{"type":"collapsible_row","settings":{"heading":"Inklapbare rij","icon":"check_mark","row_content":"","page":""}},"collapsible_row_zHHP6T":{"type":"collapsible_row","settings":{"heading":"Inklapbare rij","icon":"check_mark","row_content":"","page":""}},"collapsible_row_qzRJFB":{"type":"collapsible_row","settings":{"heading":"Inklapbare rij","icon":"check_mark","row_content":"","page":""}}},"block_order":["collapsible_row_eChPQi","collapsible_row_fmc7pT","collapsible_row_zHHP6T","collapsible_row_qzRJFB"],"disabled":true,"settings":{"caption":"","heading":"Inklapbare content","heading_size":"h1","heading_alignment":"center","layout":"none","color_scheme":"","container_color_scheme":"","open_first_collapsible_row":false,"image_ratio":"adapt","desktop_layout":"image_second","padding_top":36,"padding_bottom":36}}},"order":["slideshow_UJkzzk","custom_liquid_NL4aGg","image_banner","featured_collection","collection_list_hmp8af","selluxe_icon_text_F4kdPp","custom_liquid_tNh6Xq","selluxe_image_slider_gPA7ir","rich_text_n3aQPY","image_banner_GfDLAM","collapsible_content_wFRV3V"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_UJkzzk": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_KDXfdB": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/and_13023063-711a-40f3-857a-183762858a0c.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_iaLExd": {
+          "type": "slide",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_KDXfdB",
+        "slide_iaLExd"
+      ],
+      "custom_css": [],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 3,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": ""
+      }
+    },
+    "custom_liquid_NL4aGg": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n  /* Banner Container Styles */\n  .vl-free-shipping-banner {\n    background-color: #e4e8ff;\n    margin: 0 0 20px;\n    overflow: hidden;\n    position: relative;\n  }\n\n  .vl-free-shipping-banner .banner-content {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    gap: 8px;\n    padding: 8px 12px;\n  }\n\n  .vl-free-shipping-banner svg {\n    width: 20px;\n    height: 20px;\n  }\n\n  .vl-free-shipping-banner .banner-text {\n    color: #242f66;\n    font-size: 14px;\n    font-weight: 600;\n  }\n\n  /* Animation (Shimmer Effect) */\n  @keyframes vl-shimmer {\n    0% { transform: translateX(-100%); }\n    100% { transform: translateX(100%); }\n  }\n\n  .vl-free-shipping-banner::before {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background: linear-gradient(\n      -45deg,\n      transparent 0%,\n      transparent 45%,\n      rgba(255,255,255,0.5) 45%,\n      rgba(255,255,255,0.5) 48%,\n      transparent 48%,\n      transparent 50%,\n      rgba(255,255,255,0.5) 50%,\n      rgba(255,255,255,0.5) 57%,\n      transparent 57%,\n      transparent 100%\n    );\n    opacity: 0.6;\n    animation: vl-shimmer 3s ease-in-out infinite;\n  }\n\n  /* Desktop adjustments */\n  @media (min-width: 1024px) {\n    .vl-free-shipping-banner {\n      margin-bottom: 32px;\n    }\n    .vl-free-shipping-banner .banner-text {\n      font-size: 16px;\n    }\n    .vl-free-shipping-banner svg {\n      width: 24px;\n      height: 24px;\n    }\n    .vl-free-shipping-banner::before {\n      animation-duration: 5s;\n    }\n  }\n\n  /* Small screen adjustments */\n  @media (max-width: 380px) {\n    .vl-free-shipping-banner .banner-text {\n      font-size: 12px;\n    }\n  }\n\n  @media (max-width: 329px) {\n    .vl-free-shipping-banner .banner-text {\n      font-size: 11px;\n    }\n  }\n</style>\n\n<!-- Free Shipping Banner -->\n<div class=\"vl-free-shipping-banner\">\n  <div class=\"banner-content\">\n    <!-- Embedded SVG -->\n    <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 20 20\" height=\"20\" width=\"20\">\n      <path stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke=\"#242F66\" d=\"M6.87502 15.625C6.87502 15.9566 6.74332 16.2745 6.5089 16.5089C6.27448 16.7433 5.95654 16.875 5.62502 16.875C5.2935 16.875 4.97555 16.7433 4.74113 16.5089C4.50671 16.2745 4.37502 15.9566 4.37502 15.625M6.87502 15.625C6.87502 15.2935 6.74332 14.9756 6.5089 14.7412C6.27448 14.5067 5.95654 14.375 5.62502 14.375C5.2935 14.375 4.97555 14.5067 4.74113 14.7412C4.50671 14.9756 4.37502 15.2935 4.37502 15.625M6.87502 15.625H11.875M4.37502 15.625H2.81252C2.56388 15.625 2.32542 15.5263 2.1496 15.3504C1.97379 15.1746 1.87502 14.9362 1.87502 14.6875V11.875M11.875 15.625H13.75M11.875 15.625V11.875M1.87502 11.875V5.51253C1.87369 5.28434 1.95707 5.06377 2.10901 4.89351C2.26095 4.72325 2.47064 4.61542 2.69752 4.59087C5.47505 4.30256 8.27498 4.30256 11.0525 4.59087C11.5233 4.6392 11.875 5.0392 11.875 5.51253V6.31087M1.87502 11.875H11.875M16.25 15.625C16.25 15.9566 16.1183 16.2745 15.8839 16.5089C15.6495 16.7433 15.3315 16.875 15 16.875C14.6685 16.875 14.3506 16.7433 14.1161 16.5089C13.8817 16.2745 13.75 15.9566 13.75 15.625M16.25 15.625C16.25 15.2935 16.1183 14.9756 15.8839 14.7412C15.6495 14.5067 15.3315 14.375 15 14.375C14.6685 14.375 14.3506 14.5067 14.1161 14.7412C13.8817 14.9756 13.75 15.2935 13.75 15.625M16.25 15.625H17.1875C17.705 15.625 18.1284 15.205 18.0959 14.6884C17.9284 11.9364 17.0016 9.28467 15.4184 7.02753C15.2675 6.8161 15.0707 6.64171 14.8426 6.51756C14.6145 6.3934 14.3611 6.32272 14.1017 6.31087H11.875M11.875 6.31087V11.875\"/>\n    </svg>\n    <span class=\"banner-text\">FREE SHIPPING on all orders</span>\n  </div>\n</div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "text_y6kQzi": {
+          "type": "text",
+          "settings": {
+            "text": "END OF WINTER SALE",
+            "text_style": "caption-with-letter-spacing"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "-50% KORTING",
+            "heading_size": "h1"
+          }
+        },
+        "text_9rjcQF": {
+          "type": "text",
+          "settings": {
+            "text": "Tijdelijke Winteropruiming, kortingen tot wel -50%",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "PRODUCTEN BEKIJKEN",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "text_y6kQzi",
+        "heading",
+        "text_9rjcQF",
+        "button"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Mens_Sweater.jpg",
+        "image_overlay_opacity": 50,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "custom_css": [
+        "H2 {text-align: center;}",
+        ".card .card__badge {position: absolute;}",
+        ".savings {display: none;}"
+      ],
+      "settings": {
+        "title": "BESTSELLERS",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "best-seller-for-home-page",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 44,
+        "padding_bottom": 28
+      }
+    },
+    "collection_list_hmp8af": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_rzMey6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "winter-jassen"
+          }
+        },
+        "featured_collection_3z9TPa": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dames-jassen"
+          }
+        },
+        "featured_collection_DRgzXH": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "truien-vesten"
+          }
+        },
+        "featured_collection_y76AGf": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dames-truien-vesten"
+          }
+        },
+        "featured_collection_UMCrTt": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "womens"
+          }
+        },
+        "featured_collection_p8hrMk": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "best-seller"
+          }
+        },
+        "featured_collection_MbAQwn": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "best-seller-1"
+          }
+        },
+        "featured_collection_ABmiTa": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "mens"
+          }
+        },
+        "featured_collection_zpBErq": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "womens"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_rzMey6",
+        "featured_collection_3z9TPa",
+        "featured_collection_DRgzXH",
+        "featured_collection_y76AGf",
+        "featured_collection_UMCrTt",
+        "featured_collection_p8hrMk",
+        "featured_collection_MbAQwn",
+        "featured_collection_ABmiTa",
+        "featured_collection_zpBErq"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".title-wrapper-with-link {display: flex; justify-content: center;}",
+        ".card__content {justify-items: center;}"
+      ],
+      "settings": {
+        "title": "CATEGORIEEN",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "selluxe_icon_text_F4kdPp": {
+      "type": "selluxe-icon-text",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "header_text": "",
+        "text_1": "<p><strong>UW BETROUWBARE PARTNER VOOR KWALITEIT </strong>Bij ons staat kwaliteit en klanttevredenheid altijd voorop. Geniet van zorgeloze aankopen, uitstekende service en producten waar u op kunt vertrouwen.</p>",
+        "image_1": "shopify://shop_images/bancontact-logo-742C726BB7-seeklogo.com.png",
+        "text_2": "<p><strong>ANTWOORD OP AL UW VRAGEN BINNEN 24 UUR </strong>Ons team staat klaar om al uw vragen binnen 24 uur te beantwoorden en u te helpen.</p>",
+        "image_2": "shopify://shop_images/TrustPilot-Single-Star-Icon-PNG_112f0886-44d9-484d-837e-0fb9ea6a4f79.png",
+        "text_3": "<p><strong>30 DAGEN BEDENKTIJD </strong>Na ontvangst van uw bestelling heeft u 30 dagen de tijd om te beslissen of u het product wilt houden of moeiteloos wilt retourneren.</p>",
+        "image_3": "shopify://shop_images/bpost-logo-E03CD97013-seeklogo.com.png",
+        "text_4": ""
+      }
+    },
+    "custom_liquid_tNh6Xq": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <style>\n    body {\n      background-color: white; /* Set background color to white */\n      font-family: \"Twentieth Century Sans Serif\", sans-serif; /* Font family */\n      color: black; /* Set text color to black */\n      margin: 0;\n      padding: 0;\n    }\n\n    .row {\n      display: flex;\n      align-items: center; /* Align icon and text vertically */\n      padding: 30px 0; /* Add spacing between rows */\n      gap: 30px; /* Add spacing between icon and text */\n    }\n\n    .icon-column {\n      flex: 0 0 80px; /* Fixed width for the icon column */\n      display: flex;\n      justify-content: center; /* Center the icon horizontally */\n      align-items: center; /* Center the icon vertically */\n    }\n\n    .icon-column img {\n      max-width: 60px; /* Adjust icon size for desktop */\n      height: auto;\n    }\n\n    .text-column {\n      flex: 1; /* Text column takes remaining space */\n    }\n\n    .heading {\n      font-size: 14px; /* Keep heading bold */\n      font-weight: bold; /* Bold heading */\n      margin: 0; /* Remove margin */\n    }\n\n    .description {\n      font-size: 12px; /* Match size with heading */\n      margin: 5px 0 0 0; /* Add spacing between heading and description */\n    }\n\n    @media (max-width: 768px) {\n      .row {\n        flex-direction: row; /* Keep in row format for mobile */\n        align-items: flex-start; /* Align icon and text at the top */\n        gap: 1px; /* Reduce spacing for smaller screens */\n      }\n\n      .icon-column img {\n        max-width: 50px; /* Reduce icon size for smaller screens */\n      }\n\n      .heading,\n      .description {\n        font-size: 12px; /* Adjust text size for mobile */\n      }\n    }\n  </style>\n</head>\n<body>\n  <div class=\"row\">\n    <!-- Row 1 -->\n    <div class=\"icon-column\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0674/0692/1923/files/bancontact-logo.png?v=1733913490\" alt=\"Bancontact\">\n    </div>\n    <div class=\"text-column\">\n      <div class=\"heading\">VERTROUW OP ONZE MEER DAN 20 JAAR ERVARING</div>\n      <div class=\"description\">\n        Al meer dan twee decennia zijn we uw betrouwbare metgezel in de wereld van mode. Ontdek het onderscheid in toewijding en betrouwbaarheid.\n      </div>\n    </div>\n  </div>\n\n  <div class=\"row\">\n    <!-- Row 2 -->\n    <div class=\"icon-column\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0674/0692/1923/files/TrustPilot-Single-Star-Icon-PNG.png?v=1733913507\" alt=\"TrustPilot\">\n    </div>\n    <div class=\"text-column\">\n      <div class=\"heading\">24/7 BESCHIKBAAR VOOR AL UW VRAGEN</div>\n      <div class=\"description\">\n        Ons team staat altijd klaar om uw vragen te beantwoorden en u te helpen.\n      </div>\n    </div>\n  </div>\n\n  <div class=\"row\">\n    <!-- Row 3 -->\n    <div class=\"icon-column\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0674/0692/1923/files/10002.jpg?v=1733862377\">\n    </div>\n    <div class=\"text-column\">\n      <div class=\"heading\">30 DAGEN BEDENKTIJD</div>\n      <div class=\"description\">\n        Na ontvangst van uw bestelling heeft u 30 dagen de tijd om te beslissen of u het product wilt houden of moeiteloos wilt retourneren.\n      </div>\n    </div>\n  </div>\n</body>\n</html>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "selluxe_image_slider_gPA7ir": {
+      "type": "selluxe-image-slider",
+      "blocks": {
+        "image_block_YR8YFU": {
+          "type": "image_block",
+          "settings": {
+            "slide_image": "shopify://shop_images/C6147-Lisette-white.png"
+          }
+        },
+        "image_block_AnP47B": {
+          "type": "image_block",
+          "settings": {
+            "slide_image": "shopify://shop_images/download_30_e138a4d2-43f6-4b0d-bbe7-f8c391797b29.jpg"
+          }
+        },
+        "image_block_kJXbmr": {
+          "type": "image_block",
+          "settings": {
+            "slide_image": "shopify://shop_images/download_10.png"
+          }
+        },
+        "image_block_aAi4xn": {
+          "type": "image_block",
+          "settings": {
+            "slide_image": "shopify://shop_images/123_3_1cdfd52e-379e-4b48-a4f4-d4e5125d691c.webp"
+          }
+        },
+        "image_block_7BRAjK": {
+          "type": "image_block",
+          "settings": {
+            "slide_image": "shopify://shop_images/123_13_9b214cef-4ec8-47e2-9ce7-1018685a9f6c.webp"
+          }
+        },
+        "image_block_L4pVcq": {
+          "type": "image_block",
+          "settings": {
+            "slide_image": "shopify://shop_images/123_6_16a5c378-7a43-4977-aa9e-24819888e9eb.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_block_YR8YFU",
+        "image_block_AnP47B",
+        "image_block_kJXbmr",
+        "image_block_aAi4xn",
+        "image_block_7BRAjK",
+        "image_block_L4pVcq"
+      ],
+      "disabled": true,
+      "settings": {
+        "slider_title": "Ontzettend veel tevreden klanten",
+        "slider_title_alignment": "center",
+        "slider_title_size": 24,
+        "slides_per_view": 5,
+        "animation_speed": 5
+      }
+    },
+    "rich_text_n3aQPY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_aFGJYy": {
+          "type": "heading",
+          "settings": {
+            "heading": "14 DAGEN",
+            "heading_size": "h1"
+          }
+        },
+        "heading_ptRb6V": {
+          "type": "heading",
+          "settings": {
+            "heading": "GELD-TERUG GARANTIE",
+            "heading_size": "h2"
+          }
+        },
+        "text_wnPc8U": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Bij Van Leiden Stijlhuis staat uw tevredenheid voorop. Als u niet volledig tevreden bent met uw aankoop, bieden wij een <strong>14 dagen geld-terug </strong>garantie om uw gemoedsrust te waarborgen.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_aFGJYy",
+        "heading_ptRb6V",
+        "text_wnPc8U"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-77cb9eaa-2e8f-4c11-83fb-7dc39be798a0",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_banner_GfDLAM": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_LiGJBe": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Waarom bij ons kopen?</strong>",
+            "heading_size": "h2"
+          }
+        },
+        "text_VQ6XhC": {
+          "type": "text",
+          "settings": {
+            "text": "Bij Van Leiden Stijlhuis staat klanttevredenheid centraal. We streven naar uitstekende service, persoonlijke aandacht en de hoogste kwaliteit. Onze garanties zijn ontworpen om deze waarden te waarborgen. Neem gerust op elk moment contact met ons op—wij beantwoorden al uw vragen binnen 24 uur.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_LiGJBe",
+        "text_VQ6XhC"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".banner__box {max-width: 380px; min-width: 320px; border: 7px solid; border-color: #fff; box-shadow: inset 0 0 0 2px #000; padding: 30px;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Untitled_design_7.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "top-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "collapsible_content_wFRV3V": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_eChPQi": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Inklapbare rij",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_fmc7pT": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Inklapbare rij",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_zHHP6T": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Inklapbare rij",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_qzRJFB": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Inklapbare rij",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_eChPQi",
+        "collapsible_row_fmc7pT",
+        "collapsible_row_zHHP6T",
+        "collapsible_row_qzRJFB"
+      ],
+      "disabled": true,
+      "settings": {
+        "caption": "",
+        "heading": "Inklapbare content",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "slideshow_UJkzzk",
+    "custom_liquid_NL4aGg",
+    "image_banner",
+    "featured_collection",
+    "collection_list_hmp8af",
+    "selluxe_icon_text_F4kdPp",
+    "custom_liquid_tNh6Xq",
+    "selluxe_image_slider_gPA7ir",
+    "rich_text_n3aQPY",
+    "image_banner_GfDLAM",
+    "collapsible_content_wFRV3V"
+  ]
+}
