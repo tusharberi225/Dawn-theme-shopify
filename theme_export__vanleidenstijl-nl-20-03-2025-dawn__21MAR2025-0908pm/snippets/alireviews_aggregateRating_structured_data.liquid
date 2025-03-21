@@ -1,0 +1,15 @@
+{% assign product_structured_data = product | structured_data %}
+	{% assign rating_data = product.metafields.alireviews.seo_rating_review_key_script | remove_last: ',' | strip %}
+
+	{% if rating_data != blank %}
+	  {% assign last_brace_index = product_structured_data | split: '' | reverse | join: '' %}
+	  {% assign insert_position = product_structured_data.size | minus: last_brace_index | minus: 1 %}
+	  {% assign first_part = product_structured_data | slice: 0, insert_position %}
+	  {% assign last_part = product_structured_data | slice: insert_position, product_structured_data.size %}
+	  {% assign custom_data = first_part | append: ',' | append: rating_data  | append: last_part %}
+	{% else %}
+	  {% assign custom_data = product_structured_data %}
+	{% endif %}
+	<script type="application/ld+json">
+	{{ custom_data }}
+	</script>

@@ -1,0 +1,82 @@
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'custom-featured-collection.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign collection = section.settings.collection
+  assign products_to_display = section.settings.products_to_show
+-%}
+
+<div class="custom-featured-collection section-{{ section.id }}">
+  <div class="page-width">
+    {%- if section.settings.title != blank -%}
+      <h2 class="section-title">{{ section.settings.title }}</h2>
+    {%- endif -%}
+
+    <div class="custom-collection-grid grid grid--{{ section.settings.columns_desktop }}-col">
+      {%- for product in collection.products limit: products_to_display -%}
+        <div class="custom-product-card">
+          <a href="{{ product.url }}" class="custom-product-image">
+            <img src="{{ product.featured_image | image_url: width: 500 }}" alt="{{ product.title }}">
+          </a>
+          <div class="custom-product-info">
+            <h3 class="product-title">
+              <a href="{{ product.url }}">{{ product.title }}</a>
+            </h3>
+            <div class="product-pricing">
+              {%- if product.compare_at_price > product.price -%}
+                <span class="sale-price">{{ product.price | money }}</span>
+                <span class="compare-price">{{ product.compare_at_price | money }}</span>
+                <span class="discount">{{ product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price | round }}% OFF</span>
+              {%- else -%}
+                <span class="regular-price">{{ product.price | money }}</span>
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Custom Collection",
+  "settings": [
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Select a Collection"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Featured Products"
+    },
+    {
+      "type": "range",
+      "id": "products_to_show",
+      "min": 2,
+      "max": 12,
+      "step": 1,
+      "default": 4,
+      "label": "Number of Products"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 3,
+      "label": "Columns on Desktop"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Collection",
+      "category": "Collection"
+    }
+  ]
+}
+{% endschema %}
