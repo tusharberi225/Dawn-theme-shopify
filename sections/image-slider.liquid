@@ -86,14 +86,15 @@
             {% if block.settings.image %}
               <div class="slide min-w-full flex-shrink-0">
                 <a href="{{ block.settings.link | default: '#' }}">
-                  <img
-                    src="{{ block.settings.image | img_url: '1500x' }}"
-                    alt=""
+                    <img
+                    src="{{ block.settings.image | img_url: 'master' }}"
+                    width="{{ block.settings.image.width }}"
+                    height="{{ block.settings.image.height }}"
+                    alt="{{ block.settings.image.alt | escape }}"
                     loading="lazy"
-                    width="1500"
-                    height="800"
                     class="w-full h-auto object-cover"
-                  >
+                  />
+                  
                 </a>
               </div>
             {% endif %}
