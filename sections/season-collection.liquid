@@ -1,0 +1,93 @@
+{% schema %}
+    {
+      "name": "Season Collection",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Most Popular"
+        },
+        {
+          "type": "text",
+          "id": "subtext",
+          "label": "Subtext",
+          "default": "Check Out Now →"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "banner",
+          "name": "Banner Item",
+          "settings": [
+            {
+              "type": "image_picker",
+              "id": "image",
+              "label": "Banner Image"
+            },
+            {
+              "type": "url",
+              "id": "link",
+              "label": "Link URL"
+            }
+          ]
+        }
+      ],
+      "max_blocks": 12,
+      "presets": [
+        {
+          "name": "Season Collection",
+          "category": "Custom"
+        }
+      ]
+    }
+    {% endschema %}
+    
+    <section class="season-collection-section-padding">
+      <div class="flex flex-col items-center gap-1 text-center">
+        <h4 class="text-[#1A1E31] font-semibold text-xl lg:text-2xl">
+          {{ section.settings.heading }}
+        </h4>
+        <p class="text-sm text-[#666875] lg:text-base">
+          {{ section.settings.subtext }}
+        </p>
+      </div>
+    
+      <div class="mt-4 lg:px-2">
+        <div class="pl-4 w-full lg:w-[90%] hide-scrollbar pb-4 overflow-x-auto lg:pl-0 flex gap-4">
+          {% for block in section.blocks %}
+            {% if block.settings.image %}
+            <div class="min-w-[60%] md:min-w-[40%] lg:min-w-[24%]" {{ block.shopify_attributes }}>
+              <a href="{{ block.settings.link | default: '#' }}">
+                <img
+                  src="{{ block.settings.image | img_url: '533x' }}"
+                  alt=""
+                  class="w-full h-full object-cover rounded-lg"
+                  loading="lazy"
+                >
+              </a>
+            </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+    
+    <style>
+      .season-collection-section-padding {
+        margin: 0;
+      }
+      @media screen and (min-width: 1024px) {
+        .season-collection-section-padding {
+          margin-bottom: 72px;
+        }
+      }
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+    
