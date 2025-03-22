@@ -288,6 +288,93 @@
         "padding_bottom": 36
       }
     },
+    "collection_list_XVnLn4": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_Taahqm": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "winter-jassen"
+          }
+        },
+        "featured_collection_tEnjrQ": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dames-jassen"
+          }
+        },
+        "featured_collection_BVYx3w": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "truien-vesten"
+          }
+        },
+        "featured_collection_dhwKqc": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dames-truien-vesten"
+          }
+        },
+        "featured_collection_7eE8Ch": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "womens"
+          }
+        },
+        "featured_collection_8eU6BM": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "best-seller"
+          }
+        },
+        "featured_collection_h4fgg7": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "best-seller-1"
+          }
+        },
+        "featured_collection_LCP86D": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "mens"
+          }
+        },
+        "featured_collection_VQGJnU": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "womens"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_Taahqm",
+        "featured_collection_tEnjrQ",
+        "featured_collection_BVYx3w",
+        "featured_collection_dhwKqc",
+        "featured_collection_7eE8Ch",
+        "featured_collection_8eU6BM",
+        "featured_collection_h4fgg7",
+        "featured_collection_LCP86D",
+        "featured_collection_VQGJnU"
+      ],
+      "settings": {
+        "title": "Womens Collecitons",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "selluxe_icon_text_F4kdPp": {
       "type": "selluxe-icon-text",
       "disabled": true,
@@ -518,6 +605,7 @@
     "image_banner",
     "featured_collection",
     "collection_list_hmp8af",
+    "collection_list_XVnLn4",
     "selluxe_icon_text_F4kdPp",
     "custom_liquid_tNh6Xq",
     "selluxe_image_slider_gPA7ir",
