@@ -433,7 +433,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Inklapbare rij",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "",
             "page": ""
           }
@@ -442,7 +442,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Inklapbare rij",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "",
             "page": ""
           }
@@ -451,7 +451,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Inklapbare rij",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "",
             "page": ""
           }
@@ -463,7 +463,6 @@
         "collapsible_row_zHHP6T",
         "collapsible_row_qzRJFB"
       ],
-      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "Inklapbare content",
