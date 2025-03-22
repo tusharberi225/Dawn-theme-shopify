@@ -271,13 +271,12 @@
         "featured_collection_ABmiTa",
         "featured_collection_zpBErq"
       ],
-      "disabled": true,
       "custom_css": [
         ".title-wrapper-with-link {display: flex; justify-content: center;}",
         ".card__content {justify-items: center;}"
       ],
       "settings": {
-        "title": "CATEGORIEEN",
+        "title": "Mens Collecitons",
         "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 4,
