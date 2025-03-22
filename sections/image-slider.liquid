@@ -1,51 +1,33 @@
 {% schema %}
     {
-      "name": "Image Slider with Dots",
+      "name": "Image Slider",
       "settings": [
         {
           "type": "range",
-          "id": "autoplay_interval",
-          "label": "Autoplay interval (seconds)",
-          "min": 1,
-          "max": 10,
-          "step": 1,
-          "default": 3
+          "id": "autoplay_speed",
+          "label": "Autoplay speed (ms)",
+          "default": 3000,
+          "min": 1000,
+          "max": 10000,
+          "step": 500
         },
         {
           "type": "range",
-          "id": "padding_top",
-          "label": "Padding Top (px)",
+          "id": "padding_x",
+          "label": "Horizontal Padding (Desktop)",
+          "default": 80,
           "min": 0,
-          "max": 100,
-          "step": 4,
-          "default": 24
+          "max": 200,
+          "step": 4
         },
         {
           "type": "range",
-          "id": "padding_bottom",
-          "label": "Padding Bottom (px)",
+          "id": "padding_y",
+          "label": "Vertical Padding",
+          "default": 0,
           "min": 0,
           "max": 100,
-          "step": 4,
-          "default": 24
-        },
-        {
-          "type": "range",
-          "id": "padding_left",
-          "label": "Padding Left (px)",
-          "min": 0,
-          "max": 100,
-          "step": 4,
-          "default": 16
-        },
-        {
-          "type": "range",
-          "id": "padding_right",
-          "label": "Padding Right (px)",
-          "min": 0,
-          "max": 100,
-          "step": 4,
-          "default": 16
+          "step": 4
         }
       ],
       "blocks": [
@@ -56,147 +38,137 @@
             {
               "type": "image_picker",
               "id": "image",
-              "label": "Image"
+              "label": "Slide Image"
             },
             {
               "type": "url",
               "id": "link",
-              "label": "Link URL"
+              "label": "Slide Link"
             }
           ]
         }
       ],
+      "max_blocks": 10,
       "presets": [
         {
-          "name": "Image Slider with Dots"
+          "name": "Image Slider",
+          "category": "Custom"
         }
       ]
     }
     {% endschema %}
     
-    <section class="image-slider-section relative" style="
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-      padding-left: {{ section.settings.padding_left }}px;
-      padding-right: {{ section.settings.padding_right }}px;">
-    
-      <div class="slider-wrapper relative overflow-hidden lg:px-20">
+    <section class="slider-section" style="padding: {{ section.settings.padding_y }}px {{ section.settings.padding_x }}px;">
+      <div class="slider-wrapper relative overflow-hidden">
         <div class="slider-track flex transition-all duration-500">
           {% for block in section.blocks %}
             {% if block.settings.image %}
               <div class="slide min-w-full flex-shrink-0">
                 <a href="{{ block.settings.link | default: '#' }}">
-                    <img
-                    src="{{ block.settings.image | img_url: 'master' }}"
+                  <img
+                    src="{{ block.settings.image | image_url: width: 2000 }}"
                     width="{{ block.settings.image.width }}"
                     height="{{ block.settings.image.height }}"
                     alt="{{ block.settings.image.alt | escape }}"
-                    loading="lazy"
                     class="w-full h-auto object-cover"
-                  />
-                  
+                    loading="lazy"
+                  >
                 </a>
               </div>
             {% endif %}
           {% endfor %}
         </div>
-    
-        <!-- Navigation Buttons -->
-        <button id="prev" class="slider-nav-button prev hidden lg:flex">
-          <img src="//nobero.com/cdn/shop/t/199/assets/icon-arrow-nav.svg" width="11" height="18" alt="Prev">
-        </button>
-        <button id="next" class="slider-nav-button next hidden lg:flex">
-          <img class="rotate-180" src="//nobero.com/cdn/shop/t/199/assets/icon-arrow-nav.svg" width="11" height="18" alt="Next">
-        </button>
-    
-        <!-- Dots -->
-        <div class="slider-dots text-center mt-3">
+        <div class="slider-dots text-center mt-4">
           {% for block in section.blocks %}
             <span class="dot{% if forloop.first %} active{% endif %}" data-index="{{ forloop.index0 }}"></span>
           {% endfor %}
         </div>
+        <!-- Arrows -->
+        <button id="prev" class="slider-arrow left">
+          <img src="//cdn.shopify.com/s/files/1/0680/4150/7113/t/199/assets/icon-arrow-nav.svg" width="11" height="18">
+        </button>
+        <button id="next" class="slider-arrow right">
+          <img src="//cdn.shopify.com/s/files/1/0680/4150/7113/t/199/assets/icon-arrow-nav.svg" class="rotate-180" width="11" height="18">
+        </button>
       </div>
     </section>
     
     <style>
-      .slider-nav-button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 44px;
-        height: 44px;
-        background-color: white;
-        border-radius: 6px;
+      .slider-section {
+        max-width: 100%;
+      }
+      .slider-track {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        z-index: 20;
-        box-shadow: 0 4px 4px rgba(36, 47, 102, 0.15);
-        backdrop-filter: blur(8px);
+        transition: transform 0.5s ease-in-out;
       }
-    
-      .slider-nav-button.prev {
-        left: 3.5%;
+      .slide img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
       }
-    
-      .slider-nav-button.next {
-        right: 3.5%;
-      }
-    
-      .dot {
+      .slider-dots .dot {
         width: 6px;
-        height: 4px;
+        height: 6px;
         background-color: #bbb;
-        cursor: pointer;
         border-radius: 9999px;
         display: inline-block;
         margin: 0 4px;
         transition: all 0.3s ease;
       }
-    
-      .dot.active {
+      .slider-dots .dot.active {
         width: 12px;
         background-color: #242faa;
+      }
+      .slider-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 44px;
+        height: 44px;
+        border-radius: 8px;
+        background: white;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 4px rgba(36, 47, 102, .15);
+        backdrop-filter: blur(8px);
+        z-index: 10;
+      }
+      .slider-arrow.left { left: 3.5%; }
+      .slider-arrow.right { right: 3.5%; }
+      @media(min-width: 1024px) {
+        .slider-arrow { display: flex; }
       }
     </style>
     
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const sliderTrack = document.querySelector(".slider-track");
-        const dots = document.querySelectorAll(".dot");
-        const slides = document.querySelectorAll(".slide");
-        const totalSlides = slides.length;
-        let currentIndex = 0;
-        const interval = {{ section.settings.autoplay_interval | times: 1000 }};
+        const track = document.querySelector('.slider-track');
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        const prev = document.getElementById('prev');
+        const next = document.getElementById('next');
+        let index = 0;
+        const slideInterval = {{ section.settings.autoplay_speed }};
     
-        function goToSlide(index) {
-          sliderTrack.style.transform = `translateX(-${index * 100}%)`;
-          dots.forEach(dot => dot.classList.remove("active"));
-          if (dots[index]) dots[index].classList.add("active");
+        function showSlide(i) {
+          index = (i + slides.length) % slides.length;
+          track.style.transform = `translateX(-${index * 100}%)`;
+          dots.forEach(dot => dot.classList.remove('active'));
+          dots[index].classList.add('active');
         }
     
-        dots.forEach((dot, index) => {
-          dot.addEventListener("click", () => {
-            currentIndex = index;
-            goToSlide(index);
-          });
+        function nextSlide() { showSlide(index + 1); }
+        function prevSlide() { showSlide(index - 1); }
+    
+        next?.addEventListener('click', nextSlide);
+        prev?.addEventListener('click', prevSlide);
+        dots.forEach((dot, i) => {
+          dot.addEventListener('click', () => showSlide(i));
         });
     
-        document.getElementById("prev")?.addEventListener("click", () => {
-          currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-          goToSlide(currentIndex);
-        });
-    
-        document.getElementById("next")?.addEventListener("click", () => {
-          currentIndex = (currentIndex + 1) % totalSlides;
-          goToSlide(currentIndex);
-        });
-    
-        setInterval(() => {
-          currentIndex = (currentIndex + 1) % totalSlides;
-          goToSlide(currentIndex);
-        }, interval);
+        let autoSlide = setInterval(nextSlide, slideInterval);
       });
     </script>
     
