@@ -73,6 +73,49 @@
         "padding_bottom": 0
       }
     },
+    "season_collection_6x7tXB": {
+      "type": "season-collection",
+      "blocks": {
+        "banner_cH4xMj": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/Slider2_classic_tshirts.jpg",
+            "link": ""
+          }
+        },
+        "banner_ArXHqz": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/oversized_t-shirts.webp",
+            "link": ""
+          }
+        },
+        "banner_t7Qm3H": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/travel_essentials.webp",
+            "link": ""
+          }
+        },
+        "banner_PdDyjc": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/trendy_co-ords.webp",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "banner_cH4xMj",
+        "banner_ArXHqz",
+        "banner_t7Qm3H",
+        "banner_PdDyjc"
+      ],
+      "settings": {
+        "heading": "Most Popular",
+        "subtext": "Check Out Now →"
+      }
+    },
     "collection_list_MbXpcg": {
       "type": "collection-list",
       "blocks": {
@@ -601,6 +644,7 @@
   "order": [
     "slideshow_UJkzzk",
     "custom_liquid_NL4aGg",
+    "season_collection_6x7tXB",
     "collection_list_MbXpcg",
     "image_banner",
     "featured_collection",
