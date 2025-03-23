@@ -201,10 +201,4 @@ slideshow-component:not(.page-width) .slider-buttons {
 }
 
 /* Added by Tushar Beri*/
-.slideshow__controls,
-.slider-counter,
-.slider-buttons,
-.slideshow__control-wrapper {
-  border-top: none !important;
-  border-bottom: none !important;
-}
+
