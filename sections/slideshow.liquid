@@ -138,7 +138,7 @@
                 assign fetch_priority = 'high'
               endif
             -%}
-            <a href="{{ block.settings.link | default: '#' }}">
+            <a href="{{ block.settings.image_link | default: '#' }}">
               {%- if forloop.first %}
                 {{
                   block.settings.image
@@ -347,7 +347,7 @@
     {
       "type": "range",
       "id": "change_slides_speed",
-      "min": 3,
+      "min": 1,
       "max": 9,
       "step": 2,
       "unit": "s",
@@ -453,6 +453,12 @@
           "default": "t:sections.slideshow.blocks.slide.settings.button_label.default",
           "label": "t:sections.slideshow.blocks.slide.settings.button_label.label",
           "info": "t:sections.slideshow.blocks.slide.settings.button_label.info"
+        },
+        {
+          "type": "url",
+          "id": "image_link",
+          "label": "Image link",
+          "info": "Optional: Link the image to a page or product"
         },
         {
           "type": "url",
