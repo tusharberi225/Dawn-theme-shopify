@@ -376,5 +376,27 @@ slider-component.slider-component-full-width {
   transform: rotate(90deg) scale(1.1);
 }
 /* Added by Tushar Beri*/
+.slideshow__control-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem; /* spacing between dots */
+  margin-top: 0px; /* reduced top margin */
+  margin-bottom: 0px; /* reduced bottom margin */
+}
 
+.slideshow__control-wrapper .dot {
+  width: 0.375rem; 
+  height: 0.25rem;
+  background-color: rgb(187, 187, 187); /* inactive dot color */
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.slideshow__control-wrapper .slider-counter__link--active .dot {
+  width: 0.75rem; /* active dot wider */
+  background-color: rgb(36, 47, 170); /* active dot color */
+}
 

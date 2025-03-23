@@ -173,7 +173,6 @@
     object-fit: cover !important;
     will-change: auto !important; /* Remove animation effect */
     transition: none !important; /* Disable transition for zoom */
-    z-index: 0; /* <= This is key */
   }
 
 .banner__media-half {
@@ -502,26 +501,5 @@
 }
 
 
-/* Make the anchor tag over the image clickable */
-.slideshow__media a {
-  position: relative;
-  display: block;
-  z-index: 1; /* Ensure link is clickable */
-}
 
-/* Make sure text content stays above the image visually */
-.banner__content {
-  position: relative;
-  z-index: 2;
-}
-
-
-.banner__content {
-  pointer-events: none;
-}
-
-.banner__content a,
-.banner__content button {
-  pointer-events: auto;
-}
 
