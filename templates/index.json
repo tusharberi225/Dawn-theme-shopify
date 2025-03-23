@@ -16,38 +16,38 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/and_13023063-711a-40f3-857a-183762858a0c.jpg",
+            "image_link": "shopify://collections",
+            "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
             "button_label": "",
-            "image_link": "shopify://pages/retour-en-omruilbeleid",
             "link": "",
             "button_style_secondary": false,
-            "box_align": "middle-center",
             "show_text_box": false,
+            "box_align": "middle-center",
             "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "center"
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
           }
         },
         "slide_iaLExd": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/slider_tshirt.webp",
+            "image_link": "shopify://pages/over-ons",
+            "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
             "button_label": "",
-            "image_link": "shopify://pages/over-ons",
             "link": "",
             "button_style_secondary": false,
-            "box_align": "middle-center",
             "show_text_box": false,
+            "box_align": "middle-center",
             "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "center"
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
           }
         }
       },
