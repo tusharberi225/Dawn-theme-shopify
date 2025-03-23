@@ -5,29 +5,29 @@
         {
           "type": "range",
           "id": "autoplay_speed",
-          "label": "Autoplay speed (ms)",
-          "default": 3000,
-          "min": 1000,
-          "max": 10000,
-          "step": 500
+          "label": "Autoplay Speed (in seconds)",
+          "min": 1,
+          "max": 10,
+          "step": 1,
+          "default": 3
         },
         {
           "type": "range",
-          "id": "padding_x",
-          "label": "Horizontal Padding (Desktop)",
-          "default": 80,
-          "min": 0,
-          "max": 200,
-          "step": 4
-        },
-        {
-          "type": "range",
-          "id": "padding_y",
-          "label": "Vertical Padding",
-          "default": 0,
+          "id": "section_padding_x",
+          "label": "Side Padding (Desktop)",
           "min": 0,
           "max": 100,
-          "step": 4
+          "step": 4,
+          "default": 80
+        },
+        {
+          "type": "range",
+          "id": "section_padding_y",
+          "label": "Top & Bottom Padding",
+          "min": 0,
+          "max": 100,
+          "step": 4,
+          "default": 0
         }
       ],
       "blocks": [
@@ -43,7 +43,7 @@
             {
               "type": "url",
               "id": "link",
-              "label": "Slide Link"
+              "label": "Image Link"
             }
           ]
         }
@@ -57,116 +57,103 @@
     }
     {% endschema %}
     
-    <section class="slider-section" style="padding: {{ section.settings.padding_y }}px {{ section.settings.padding_x }}px;">
-      <div class="slider-wrapper relative overflow-hidden">
-        <div class="slider-track flex transition-all duration-500">
+    <section
+      class="image-slider-wrapper"
+      style="padding: {{ section.settings.section_padding_y }}px {{ section.settings.section_padding_x }}px;"
+    >
+      <div class="slider-container relative">
+        <div class="slider-track flex transition-all duration-500 ease-in-out">
           {% for block in section.blocks %}
             {% if block.settings.image %}
               <div class="slide min-w-full flex-shrink-0">
                 <a href="{{ block.settings.link | default: '#' }}">
                   <img
-                    src="{{ block.settings.image | image_url: width: 2000 }}"
+                    src="{{ block.settings.image | img_url: 'master' }}"
                     width="{{ block.settings.image.width }}"
                     height="{{ block.settings.image.height }}"
                     alt="{{ block.settings.image.alt | escape }}"
                     loading="lazy"
-                  >
+                    class="w-full h-auto object-cover aspect-[5/3] lg:aspect-[21/9]"
+                  />
                 </a>
               </div>
             {% endif %}
           {% endfor %}
         </div>
-        <div class="slider-dots text-center mt-4">
+    
+        <!-- Pagination Dots -->
+        <div class="dots text-center mt-2">
           {% for block in section.blocks %}
-            <span class="dot{% if forloop.first %} active{% endif %}" data-index="{{ forloop.index0 }}"></span>
+            <span class="dot inline-block mx-1 w-1.5 h-1 rounded-full bg-gray-400 cursor-pointer" data-index="{{ forloop.index0 }}"></span>
           {% endfor %}
         </div>
-        <!-- Arrows -->
-        <button id="prev" class="slider-arrow left">
-          <img src="//cdn.shopify.com/s/files/1/0680/4150/7113/t/199/assets/icon-arrow-nav.svg" width="11" height="18">
+    
+        <!-- Desktop Arrows -->
+        <button id="prevBtn" class="hidden lg:flex prev absolute left-4 top-1/2 transform -translate-y-1/2 bg-white w-11 h-11 rounded-md justify-center items-center z-10 shadow-md">
+          
         </button>
-        <button id="next" class="slider-arrow right">
-          <img src="//cdn.shopify.com/s/files/1/0680/4150/7113/t/199/assets/icon-arrow-nav.svg" class="rotate-180" width="11" height="18">
+        <button id="nextBtn" class="hidden lg:flex next absolute right-4 top-1/2 transform -translate-y-1/2 bg-white w-11 h-11 rounded-md justify-center items-center z-10 shadow-md">
+          
         </button>
       </div>
     </section>
     
     <style>
-      .slider-section {
-        max-width: 100%;
+      .slider-container {
+        overflow: hidden;
       }
-      .slider-track {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-      }
-      .slide img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        display: block;
-      }
-      .slider-dots .dot {
-        width: 6px;
-        height: 6px;
-        background-color: #bbb;
-        border-radius: 9999px;
-        display: inline-block;
-        margin: 0 4px;
-        transition: all 0.3s ease;
-      }
-      .slider-dots .dot.active {
+    
+      .dot.active {
         width: 12px;
         background-color: #242faa;
       }
-      .slider-arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 44px;
-        height: 44px;
-        border-radius: 8px;
-        background: white;
-        display: none;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 4px 4px rgba(36, 47, 102, .15);
-        backdrop-filter: blur(8px);
-        z-index: 10;
-      }
-      .slider-arrow.left { left: 3.5%; }
-      .slider-arrow.right { right: 3.5%; }
-      @media(min-width: 1024px) {
-        .slider-arrow { display: flex; }
+    
+      .dot {
+        transition: all 0.3s ease;
       }
     </style>
     
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const track = document.querySelector('.slider-track');
-        const slides = document.querySelectorAll('.slide');
         const dots = document.querySelectorAll('.dot');
-        const prev = document.getElementById('prev');
-        const next = document.getElementById('next');
-        let index = 0;
-        const slideInterval = {{ section.settings.autoplay_speed }};
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
     
-        function showSlide(i) {
-          index = (i + slides.length) % slides.length;
-          track.style.transform = `translateX(-${index * 100}%)`;
+        let current = 0;
+        let interval = {{ section.settings.autoplay_speed | default: 3 }} * 1000;
+    
+        function updateSlider(index) {
+          const width = slides[0].offsetWidth;
+          track.style.transform = `translateX(-${index * width}px)`;
           dots.forEach(dot => dot.classList.remove('active'));
-          dots[index].classList.add('active');
+          if (dots[index]) dots[index].classList.add('active');
         }
     
-        function nextSlide() { showSlide(index + 1); }
-        function prevSlide() { showSlide(index - 1); }
-    
-        next?.addEventListener('click', nextSlide);
-        prev?.addEventListener('click', prevSlide);
-        dots.forEach((dot, i) => {
-          dot.addEventListener('click', () => showSlide(i));
+        dots.forEach(dot => {
+          dot.addEventListener('click', function () {
+            current = parseInt(this.getAttribute('data-index'));
+            updateSlider(current);
+          });
         });
     
-        let autoSlide = setInterval(nextSlide, slideInterval);
+        prevBtn?.addEventListener('click', () => {
+          current = (current - 1 + slides.length) % slides.length;
+          updateSlider(current);
+        });
+    
+        nextBtn?.addEventListener('click', () => {
+          current = (current + 1) % slides.length;
+          updateSlider(current);
+        });
+    
+        setInterval(() => {
+          current = (current + 1) % slides.length;
+          updateSlider(current);
+        }, interval);
+    
+        window.addEventListener('resize', () => updateSlider(current));
       });
     </script>
     
