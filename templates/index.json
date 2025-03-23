@@ -15,7 +15,8 @@
         "slide_KDXfdB": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/and_13023063-711a-40f3-857a-183762858a0c.jpg",
+            "image": "shopify://shop_images/Desktop_-_Homepage_Banners-20_1.webp",
+            "mobile_image": "shopify://shop_images/mobile_tshirts.webp",
             "image_link": "shopify://collections",
             "image_overlay_opacity": 0,
             "heading": "",
@@ -35,6 +36,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/slider_tshirt.webp",
+            "mobile_image": "shopify://shop_images/mobile_oversize-tshirts.webp",
             "image_link": "shopify://collections/winter-jassen",
             "image_overlay_opacity": 0,
             "heading": "",
@@ -49,11 +51,32 @@
             "text_alignment_mobile": "center",
             "color_scheme": "scheme-1"
           }
+        },
+        "slide_FAJenr": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/slide_polos.webp",
+            "mobile_image": "shopify://shop_images/mobile_polos.webp",
+            "image_link": "shopify://collections",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
         }
       },
       "block_order": [
         "slide_KDXfdB",
-        "slide_iaLExd"
+        "slide_iaLExd",
+        "slide_FAJenr"
       ],
       "custom_css": [],
       "settings": {
