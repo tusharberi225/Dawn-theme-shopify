@@ -33,6 +33,7 @@
         "slide_iaLExd": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/slider_tshirt.webp",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
