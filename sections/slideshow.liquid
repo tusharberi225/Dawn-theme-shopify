@@ -61,7 +61,7 @@
                 {%- if section.settings.slider_visual == 'numbers' -%}
                   {{ forloop.index -}}
                 {%- else -%}
-                  <span class="dot" data-index="{{ forloop.index0 }}"></span>
+                  <span class="dot"></span>
                 {%- endif -%}
               </button>
             {%- endfor -%}
@@ -80,7 +80,6 @@
         </span>
       </button>
       {% comment %}
-      /* Added by Tushar Beri*/
       {%- if section.settings.auto_rotate -%}
         <button
           type="button"
@@ -160,6 +159,10 @@
             {%- endif -%}
           {%- endif -%}
         </div>
+
+        <a href="{{ block.settings.image_link | default: '#' }}" style="display:block; position:absolute; width:100%; height:100%; left:0; top:0;z-index:999">
+              {{ block.settings.image | image_url: width: 3840 | image_tag: height: height, sizes: sizes, widths: widths, fetchpriority: fetch_priority }}
+            </a>
         <div class="slideshow__text-wrapper banner__content banner__content--{{ block.settings.box_align }} page-width{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll and forloop.index == 1 %} scroll-trigger animate--slide-in{% endif %}">
           <div class="slideshow__text banner__box content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient slideshow__text--{{ block.settings.text_alignment }} slideshow__text-mobile--{{ block.settings.text_alignment_mobile }}">
             {%- if block.settings.heading != blank -%}
@@ -168,7 +171,7 @@
               </h2>
             {%- endif -%}
             {%- if block.settings.subheading != blank -%}
-              <div class="banner__text rte" {{ block.shopify_attributes }}>
+              <div class="banner__text rte">
                 <p>{{ block.settings.subheading }}</p>
               </div>
             {%- endif -%}
@@ -240,9 +243,7 @@
           {{- 'icon-caret.svg' | inline_asset_content -}}
         </span>
       </button>
-
-    {% comment %}
-      /* Added by Tushar Beri*/
+        
       {%- if section.settings.auto_rotate -%}
         <button
           type="button"
@@ -257,15 +258,13 @@
           </span>
         </button>
       {%- endif -%}
-    {% endcomment %}
     </div>
   {%- endif -%}
 </slideshow-component>
+
 {%- if request.design_mode -%}
   <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
-
-
 
 {% schema %}
 {
@@ -353,10 +352,6 @@
       "default": 5
     },
     {
-      "type": "header",
-      "content": "t:sections.all.animation.content"
-    },
-    {
       "type": "select",
       "id": "image_behavior",
       "options": [
@@ -406,6 +401,25 @@
           "label": "t:sections.slideshow.blocks.slide.settings.image.label"
         },
         {
+          "type": "url",
+          "id": "image_link",
+          "label": "image link"
+        },
+        {
+          "type": "range",
+          "id": "image_overlay_opacity",
+          "min": 0,
+          "max": 100,
+          "step": 10,
+          "unit": "%",
+          "label": "t:sections.slideshow.blocks.slide.settings.image_overlay_opacity.label",
+          "default": 0
+        },
+        {
+          "type": "header",
+          "content": "t:sections.slideshow.blocks.slide.settings.header_text.content"
+        },
+        {
           "type": "inline_richtext",
           "id": "heading",
           "default": "t:sections.slideshow.blocks.slide.settings.heading.default",
@@ -446,10 +460,14 @@
           "label": "t:sections.slideshow.blocks.slide.settings.subheading.label"
         },
         {
+          "type": "header",
+          "content": "t:sections.slideshow.blocks.slide.settings.header_button.content"
+        },        
+        {
           "type": "text",
           "id": "button_label",
           "default": "t:sections.slideshow.blocks.slide.settings.button_label.default",
-          "label": "t:sections.slideshow.blocks.slide.settings.button_label.label",
+          "label": "t:sections.slideshow.blocks.slide.settings.button_label.label", 
           "info": "t:sections.slideshow.blocks.slide.settings.button_label.info"
         },
         {
@@ -462,6 +480,16 @@
           "id": "button_style_secondary",
           "label": "t:sections.slideshow.blocks.slide.settings.secondary_style.label",
           "default": false
+        },
+        {
+          "type": "header",
+          "content": "t:sections.slideshow.blocks.slide.settings.header_layout.content"
+        },         
+        {
+          "type": "checkbox",
+          "id": "show_text_box",
+          "label": "t:sections.slideshow.blocks.slide.settings.show_text_box.label",
+          "default": true
         },
         {
           "type": "select",
@@ -505,14 +533,7 @@
             }
           ],
           "default": "middle-center",
-          "label": "t:sections.slideshow.blocks.slide.settings.box_align.label",
-          "info": "t:sections.slideshow.blocks.slide.settings.box_align.info"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_text_box",
-          "label": "t:sections.slideshow.blocks.slide.settings.show_text_box.label",
-          "default": true
+          "label": "t:sections.slideshow.blocks.slide.settings.box_align.label"
         },
         {
           "type": "select",
@@ -535,26 +556,6 @@
           "label": "t:sections.slideshow.blocks.slide.settings.text_alignment.label"
         },
         {
-          "type": "range",
-          "id": "image_overlay_opacity",
-          "min": 0,
-          "max": 100,
-          "step": 10,
-          "unit": "%",
-          "label": "t:sections.slideshow.blocks.slide.settings.image_overlay_opacity.label",
-          "default": 0
-        },
-        {
-          "type": "color_scheme",
-          "id": "color_scheme",
-          "label": "t:sections.all.colors.label",
-          "default": "scheme-1"
-        },
-        {
-          "type": "header",
-          "content": "t:sections.slideshow.settings.mobile.content"
-        },
-        {
           "type": "select",
           "id": "text_alignment_mobile",
           "options": [
@@ -573,6 +574,12 @@
           ],
           "default": "center",
           "label": "t:sections.slideshow.blocks.slide.settings.text_alignment_mobile.label"
+        },        
+        {
+          "type": "color_scheme",
+          "id": "color_scheme",
+          "label": "t:sections.all.colors.label",
+          "default": "scheme-1"
         }
       ]
     }

@@ -47,11 +47,8 @@
 
 .banner__media.animate--zoom-in > img:not(.zoom):not(.deferred-media__poster-button),
 .banner__media.animate--zoom-in > svg:not(.zoom):not(.deferred-media__poster-button) {
-  position: absolute !important; /* Change from fixed to absolute */
-    height: 100% !important; /* Ensures full height */
-    width: 100% !important;
-    object-fit: cover !important;
-    transform: none !important;
+  position: fixed;
+  height: 100vh;
 }
 
 @media screen and (max-width: 749px) {
@@ -157,23 +154,17 @@
   }
 
   .banner--stacked .banner__media {
-    
-     height: auto !important;
-    position: relative !important;
-    transform: none !important;
+    flex-direction: column;
   }
 }
 
 .banner__media {
-    height: 100% !important;
-    width: 100% !important;
-    position: absolute !important;
-    left: 0;
-    top: 0;
-    object-fit: cover !important;
-    will-change: auto !important; /* Remove animation effect */
-    transition: none !important; /* Disable transition for zoom */
-  }
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
 
 .banner__media-half {
   width: 50%;
@@ -499,7 +490,3 @@
     color: currentColor;
   }
 }
-
-
-
-

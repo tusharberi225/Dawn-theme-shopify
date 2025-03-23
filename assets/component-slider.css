@@ -375,6 +375,7 @@ slider-component.slider-component-full-width {
 .slider-button--prev:not([disabled]):hover .icon {
   transform: rotate(90deg) scale(1.1);
 }
+
 /* Added by Tushar Beri*/
 .slideshow__control-wrapper {
   display: flex;
@@ -399,4 +400,3 @@ slider-component.slider-component-full-width {
   width: 0.75rem; /* active dot wider */
   background-color: rgb(36, 47, 170); /* active dot color */
 }
-
