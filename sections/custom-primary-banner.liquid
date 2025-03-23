@@ -1,0 +1,195 @@
+{% stylesheet %}
+    .prodlord-slider {
+      overflow: hidden;
+      position: relative;
+    }
+    .prodlord-slider-track {
+      display: flex;
+      transition: transform 0.3s ease;
+      will-change: transform;
+    }
+    .prodlord-slider-slide {
+      flex: 0 0 auto;
+      width: 100%;
+    }
+    .slider-nav-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      background: white;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: none;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #000;
+      justify-content: center;
+      align-items: center;
+    }
+    .slider-nav-prev { left: 3.5%; }
+    .slider-nav-next { right: 3.5%; }
+    @media(min-width: 1024px) {
+      .slider-nav-button { display: flex; }
+    }
+    .slider-dots {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .slider-dot {
+      display: inline-block;
+      width: 8px;
+      height: 4px;
+      margin: 0 4px;
+      background-color: #bbb;
+      border-radius: 9999px;
+      cursor: pointer;
+    }
+    .slider-dot.active {
+      width: 12px;
+      background-color: #242faa;
+    }
+  {% endstylesheet %}
+  
+  <section class="custom-primary-banner-section section">
+    <div class="lg:hidden">
+      <div class="prodlord-slider" id="mobile-primary-slider">
+        <div class="prodlord-slider-track">
+          {% for block in section.blocks %}
+            <div class="prodlord-slider-slide">
+              <a href="{{ block.settings.link | default: '#' }}">
+                <img
+                  src="{{ block.settings.image | img_url: '1080x' }}"
+                  alt="{{ block.settings.image.alt | default: 'Banner image' }}"
+                  width="1080"
+                  height="864"
+                  class="w-full h-full object-cover aspect-[5/4]"
+                  loading="{% if forloop.first %}eager{% else %}lazy{% endif %}"
+                >
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+        <button class="slider-nav-button slider-nav-prev" id="prevMobile" aria-label="Previous">&#10094;</button>
+        <button class="slider-nav-button slider-nav-next" id="nextMobile" aria-label="Next">&#10095;</button>
+        <div class="slider-dots" id="dotsMobile"></div>
+      </div>
+    </div>
+  
+    <div class="hidden lg:block">
+      <div class="prodlord-slider" id="desktop-primary-slider">
+        <div class="prodlord-slider-track">
+          {% for block in section.blocks %}
+            <div class="prodlord-slider-slide">
+              <a href="{{ block.settings.link | default: '#' }}">
+                <img
+                  src="{{ block.settings.image | img_url: '2000x' }}"
+                  alt="{{ block.settings.image.alt | default: 'Banner image' }}"
+                  width="2000"
+                  height="1125"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                >
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+        <button class="slider-nav-button slider-nav-prev" id="prevDesktop" aria-label="Previous">&#10094;</button>
+        <button class="slider-nav-button slider-nav-next" id="nextDesktop" aria-label="Next">&#10095;</button>
+        <div class="slider-dots" id="dotsDesktop"></div>
+      </div>
+    </div>
+  </section>
+  
+  {% javascript %}
+    function initProdLordSlider(wrapperId, dotsId, prevId, nextId) {
+      const wrapper = document.getElementById(wrapperId);
+      const track = wrapper.querySelector('.prodlord-slider-track');
+      const slides = wrapper.querySelectorAll('.prodlord-slider-slide');
+      const dots = document.getElementById(dotsId);
+      const prevBtn = document.getElementById(prevId);
+      const nextBtn = document.getElementById(nextId);
+  
+      let currentIndex = 0;
+      const totalSlides = slides.length;
+  
+      function updateSlider() {
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+        Array.from(dots.children).forEach((dot, index) => {
+          dot.classList.toggle('active', index === currentIndex);
+        });
+      }
+  
+      function createDots() {
+        for (let i = 0; i < totalSlides; i++) {
+          const dot = document.createElement('span');
+          dot.classList.add('slider-dot');
+          if (i === 0) dot.classList.add('active');
+          dot.addEventListener('click', () => {
+            currentIndex = i;
+            updateSlider();
+          });
+          dots.appendChild(dot);
+        }
+      }
+  
+      prevBtn?.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateSlider();
+      });
+  
+      nextBtn?.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateSlider();
+      });
+  
+      createDots();
+      updateSlider();
+      setInterval(() => {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateSlider();
+      }, 3000);
+    }
+  
+    document.addEventListener('DOMContentLoaded', function () {
+      initProdLordSlider('mobile-primary-slider', 'dotsMobile', 'prevMobile', 'nextMobile');
+      initProdLordSlider('desktop-primary-slider', 'dotsDesktop', 'prevDesktop', 'nextDesktop');
+    });
+  {% endjavascript %}
+  
+  {% schema %}
+  {
+    "name": "Custom Primary Banner",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "image_slide",
+        "name": "Image Slide",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Slide image"
+          },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "Slide link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Primary Banner",
+        "blocks": [
+          { "type": "image_slide" },
+          { "type": "image_slide" },
+          { "type": "image_slide" }
+        ]
+      }
+    ]
+  }
+  {% endschema %}
+  
