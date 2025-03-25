@@ -162,10 +162,7 @@
         "featured_collection_9xP4dX",
         "featured_collection_kje8yw"
       ],
-      "custom_css": [
-        ".card {position: relative;}",
-        ".card__information {display: none !important;}"
-      ],
+      "custom_css": [],
       "settings": {
         "title": "Collecties",
         "heading_size": "h1",
