@@ -49,7 +49,7 @@
       <p class="season-subtext">{{ section.settings.subtext }}</p>
     </div>
   
-    <div class="season-scroll-wrapper">
+    <div class="season-scroll-wrapper scroll-smooth">
       {% for block in section.blocks %}
         {% if block.settings.image %}
           <div class="season-banner-item" {{ block.shopify_attributes }}>
@@ -130,6 +130,7 @@
       overflow-x: auto;
       scroll-snap-type: x mandatory;
       -webkit-overflow-scrolling: touch;
+      scroll-behavior: smooth; /*Tushar*/
     }
   
     .season-scroll-wrapper::-webkit-scrollbar {
@@ -167,5 +168,12 @@
       border-radius: 8px;
       display: block;
     }
+
+    /* tushar extra*/
+    .scroll-smooth {
+      scroll-behavior: smooth;
+    }
+
+
   </style>
   
