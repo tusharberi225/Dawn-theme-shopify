@@ -163,6 +163,7 @@
         "featured_collection_kje8yw"
       ],
       "custom_css": [
+        ".card {position: relative;}",
         ".card__information {display: none !important;}"
       ],
       "settings": {
