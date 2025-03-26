@@ -2,83 +2,7 @@
 {{ 'custom-component-card.css' | asset_url | stylesheet_tag }}
 {{ 'custom-component-slider.css' | asset_url | stylesheet_tag }}
 
-{% schema %}
-    {
-      "name": "Custom Collection list",
-      "settings": [
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Heading",
-          "default": "Collections"
-        },
-        {
-          "type": "select",
-          "id": "image_ratio",
-          "label": "Image ratio",
-          "options": [
-            { "value": "adapt", "label": "Adapt to image" },
-            { "value": "portrait", "label": "Portrait" },
-            { "value": "square", "label": "Square" }
-          ],
-          "info": "Add images by editing your collections. [Learn more](https://help.shopify.com/manual/products/collections)"
-        },
-        {
-          "type": "range",
-          "id": "columns_desktop",
-          "label": "Number of columns on desktop",
-          "min": 2,
-          "max": 6,
-          "step": 1,
-          "default": 4
-        },
-        {
-          "type": "checkbox",
-          "id": "show_view_all",
-          "label": "Enable \"View all\" button if list includes more collections than shown",
-          "default": true
-        },
-        {
-          "type": "header",
-          "content": "Mobile Layout"
-        },
-        {
-          "type": "select",
-          "id": "columns_mobile",
-          "label": "Number of columns on mobile",
-          "options": [
-            { "value": "1", "label": "1 column" },
-            { "value": "2", "label": "2 columns" }
-          ],
-          "default": "2"
-        },
-        {
-          "type": "checkbox",
-          "id": "swipe_on_mobile",
-          "label": "Enable swipe on mobile",
-          "default": false
-        }
-      ],
-      "blocks": [
-        {
-          "type": "featured_collection",
-          "name": "Collection",
-          "settings": [
-            {
-              "type": "collection",
-              "id": "collection",
-              "label": "Collection"
-            }
-          ]
-        }
-      ],
-      "presets": [
-        {
-          "name": "Collection list"
-        }
-      ]
-    }
-    {% endschema %}
+
     
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -213,7 +137,7 @@
 
 {% schema %}
 {
-  "name": "t:sections.collection-list.name",
+  "name": "Custom Collection List",
   "tag": "section",
   "class": "section section-collection-list",
   "max_blocks": 15,
@@ -364,7 +288,7 @@
   ],
   "presets": [
     {
-      "name": "t:sections.collection-list.presets.name",
+      "name": "Custom Collection List",
       "blocks": [
         {
           "type": "featured_collection"
