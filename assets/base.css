@@ -3620,18 +3620,7 @@ body {
  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
 }
 */
-.collection-list-wrapper .card__content {
-    position: absolute;
-    bottom: 45%;
-}
 
-.collection-list-wrapper .card__heading {
-    color: white;
-}
-
-.collection-list-wrapper span.icon-wrap {
-    display: none;
-}
 
 .custom-badge { 
       position: absolute; 

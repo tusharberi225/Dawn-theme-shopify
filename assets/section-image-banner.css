@@ -490,3 +490,16 @@
     color: currentColor;
   }
 }
+
+.collection-list-wrapper .card__content {
+position: absolute;
+bottom: 45%;
+}
+
+.collection-list-wrapper .card__heading {
+color: white;
+}
+
+.collection-list-wrapper span.icon-wrap {
+display: none;
+}
