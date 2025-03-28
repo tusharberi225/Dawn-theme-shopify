@@ -603,42 +603,11 @@
       clip-path: polygon(var(--shape--blob-5));
     }
   }
-  /* Tushar css code*/
-  /* 📝 Move Product Title to Extreme Left & Top */
-  .card__heading {
-      text-align: left !important; /* Align to left */
-      width: 150%; /* Ensure full width */
-      margin: 0 !important; /* Remove any default margin */
-      padding: 0 0 0 0 !important; /* Adjust top and left padding */
-      position: absolute; /* Force positioning */
-      top: 0px; /* Move to extreme top */
-      left: 5px; /* Move to extreme left */
-      white-space: nowrap; /* Prevents line breaks */
-      overflow: hidden; /* Hides overflow text */
-      text-overflow: ellipsis; /* Shows "..." when text is too long */
-      font-size: 1.3rem;
-      line-height: 1.25rem;
-      color:#505985d9;
-  }
-  
-  /* 📷 Remove Space Below Image */
-  .card__media {
-      margin: 0 !important; 
-      padding: 0 !important; 
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
+ 
   
   /* 🎯 Adjust Card Layout to Remove Gaps */
-  .card__content {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      padding: 0 !important;
-      margin: 0 !important;
-      position: relative; /* Keep structure intact */
-  }
   
+  .custom-collection-list-wrapper .card__information {
+    display: none !important;
+  }
   
