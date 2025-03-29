@@ -106,25 +106,28 @@
           "type": "featured_collection",
           "settings": {
             "collection": "truien-vesten",
-            "custom_collection_image": "shopify://shop_images/mobile_tshirts.webp"
+            "custom_collection_image": "shopify://shop_images/oversized_t-shirts.webp"
           }
         },
         "featured_collection_3KWxrg": {
           "type": "featured_collection",
           "settings": {
-            "collection": "dames-truien-vesten"
+            "collection": "dames-truien-vesten",
+            "custom_collection_image": "shopify://shop_images/trendy_co-ords.webp"
           }
         },
         "featured_collection_CJ8Ee9": {
           "type": "featured_collection",
           "settings": {
-            "collection": "truien-vesten"
+            "collection": "truien-vesten",
+            "custom_collection_image": "shopify://shop_images/travel_essentials.webp"
           }
         },
         "featured_collection_Kg8C4F": {
           "type": "featured_collection",
           "settings": {
-            "collection": "dames-truien-vesten"
+            "collection": "dames-truien-vesten",
+            "custom_collection_image": "shopify://shop_images/Slider2_classic_tshirts.jpg"
           }
         }
       },
