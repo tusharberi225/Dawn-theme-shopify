@@ -157,48 +157,32 @@
           "type": "featured_collection",
           "settings": {
             "collection": "truien-vesten",
-            "custom_collection_image": "shopify://shop_images/Slider2_classic_tshirts.jpg"
+            "custom_collection_image": "shopify://shop_images/758ec57fcb1f9f030fe45483fff247aa817c75a3-750x750.webp"
           }
         },
         "featured_collection_yppPAh": {
           "type": "featured_collection",
           "settings": {
             "collection": "dames-truien-vesten",
-            "custom_collection_image": "shopify://shop_images/oversized_t-shirts.webp"
-          }
-        },
-        "featured_collection_V7FhAj": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "truien-vesten",
-            "custom_collection_image": "shopify://shop_images/travel_essentials.webp"
-          }
-        },
-        "featured_collection_mzRXV9": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "dames-truien-vesten",
-            "custom_collection_image": "shopify://shop_images/Slider2_classic_tshirts.jpg"
+            "custom_collection_image": "shopify://shop_images/c776d0b9a226f0907a3479bbb19728dd94c07206-750x750.webp"
           }
         }
       },
       "block_order": [
         "featured_collection_AV73fC",
-        "featured_collection_yppPAh",
-        "featured_collection_V7FhAj",
-        "featured_collection_mzRXV9"
+        "featured_collection_yppPAh"
       ],
       "settings": {
-        "title": "Collecties",
+        "title": "",
         "heading_size": "h1",
         "image_ratio": "portrait",
-        "columns_desktop": 4,
+        "columns_desktop": 2,
         "color_scheme": "",
         "show_view_all": false,
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     },
     "season_collection_qD74NG": {
