@@ -49,6 +49,7 @@
     >
     {%- if card_collection.featured_image -%}
       {%- if custom_image != blank -%}
+        <a href="{{ card_collection.url }}" class="full-unstyled-link">
         <div class="card__media">
           <div class="media media--transparent media--hover-effect">
             <img
@@ -61,8 +62,10 @@
           >
           </div>
         </div>
+        </a>
       {%- else -%}
-        <div class="card__media">
+        <a href="{{ card_collection.url }}" class="full-unstyled-link"> 
+          <div class="card__media">
           <div class="media media--transparent media--hover-effect">
             <img
               srcset="
@@ -89,11 +92,14 @@
             >
           </div>
         </div>
+        </a>
       {%- endif -%}
     {%- else -%}
-      <div class="card__media">
+      <a href="{{ card_collection.url }}" class="full-unstyled-link"> 
+       <div class="card__media">
         {{ placeholder_image | placeholder_svg_tag: 'placeholder-svg' }}
-      </div>
+        </div>
+      </a>
     {%- endif -%}
     
     {%- if card_collection != blank -%}
