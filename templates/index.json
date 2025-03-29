@@ -105,7 +105,8 @@
         "featured_collection_TUU6Hh": {
           "type": "featured_collection",
           "settings": {
-            "collection": "truien-vesten"
+            "collection": "truien-vesten",
+            "custom_collection_image": "shopify://shop_images/mobile_oversize-tshirts.webp"
           }
         },
         "featured_collection_3KWxrg": {
