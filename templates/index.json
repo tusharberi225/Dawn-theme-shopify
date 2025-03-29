@@ -150,6 +150,57 @@
         "padding_bottom": 0
       }
     },
+    "custom_collection_list_LfrziL": {
+      "type": "custom-collection-list",
+      "blocks": {
+        "featured_collection_AV73fC": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "truien-vesten",
+            "custom_collection_image": "shopify://shop_images/Slider2_classic_tshirts.jpg"
+          }
+        },
+        "featured_collection_yppPAh": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dames-truien-vesten",
+            "custom_collection_image": "shopify://shop_images/oversized_t-shirts.webp"
+          }
+        },
+        "featured_collection_V7FhAj": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "truien-vesten",
+            "custom_collection_image": "shopify://shop_images/travel_essentials.webp"
+          }
+        },
+        "featured_collection_mzRXV9": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dames-truien-vesten",
+            "custom_collection_image": "shopify://shop_images/Slider2_classic_tshirts.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_AV73fC",
+        "featured_collection_yppPAh",
+        "featured_collection_V7FhAj",
+        "featured_collection_mzRXV9"
+      ],
+      "settings": {
+        "title": "Collecties",
+        "heading_size": "h1",
+        "image_ratio": "portrait",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "season_collection_qD74NG": {
       "type": "season-collection",
       "blocks": {
@@ -191,40 +242,6 @@
       "settings": {
         "heading": "Most Popular",
         "subtext": "Check Out Now →"
-      }
-    },
-    "collection_list_MbXpcg": {
-      "type": "collection-list",
-      "blocks": {
-        "featured_collection_9xP4dX": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "best-seller-for-home-page"
-          }
-        },
-        "featured_collection_kje8yw": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_9xP4dX",
-        "featured_collection_kje8yw"
-      ],
-      "custom_css": [],
-      "settings": {
-        "title": "Collecties",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 3,
-        "color_scheme": "",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "image_banner": {
@@ -316,184 +333,6 @@
         "swipe_on_mobile": true,
         "padding_top": 44,
         "padding_bottom": 28
-      }
-    },
-    "collection_list_hmp8af": {
-      "type": "collection-list",
-      "blocks": {
-        "featured_collection_rzMey6": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "winter-jassen"
-          }
-        },
-        "featured_collection_3z9TPa": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "dames-jassen"
-          }
-        },
-        "featured_collection_DRgzXH": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "truien-vesten"
-          }
-        },
-        "featured_collection_y76AGf": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "dames-truien-vesten"
-          }
-        },
-        "featured_collection_UMCrTt": {
-          "type": "featured_collection",
-          "disabled": true,
-          "settings": {
-            "collection": "womens"
-          }
-        },
-        "featured_collection_p8hrMk": {
-          "type": "featured_collection",
-          "disabled": true,
-          "settings": {
-            "collection": "best-seller"
-          }
-        },
-        "featured_collection_MbAQwn": {
-          "type": "featured_collection",
-          "disabled": true,
-          "settings": {
-            "collection": "best-seller-1"
-          }
-        },
-        "featured_collection_ABmiTa": {
-          "type": "featured_collection",
-          "disabled": true,
-          "settings": {
-            "collection": "mens"
-          }
-        },
-        "featured_collection_zpBErq": {
-          "type": "featured_collection",
-          "disabled": true,
-          "settings": {
-            "collection": "womens"
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_rzMey6",
-        "featured_collection_3z9TPa",
-        "featured_collection_DRgzXH",
-        "featured_collection_y76AGf",
-        "featured_collection_UMCrTt",
-        "featured_collection_p8hrMk",
-        "featured_collection_MbAQwn",
-        "featured_collection_ABmiTa",
-        "featured_collection_zpBErq"
-      ],
-      "custom_css": [
-        ".title-wrapper-with-link {display: flex; justify-content: center;}",
-        ".card__content {justify-items: center;}"
-      ],
-      "settings": {
-        "title": "Mens Collecitons",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "show_view_all": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "collection_list_XVnLn4": {
-      "type": "collection-list",
-      "blocks": {
-        "featured_collection_Taahqm": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "winter-jassen"
-          }
-        },
-        "featured_collection_tEnjrQ": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "dames-jassen"
-          }
-        },
-        "featured_collection_BVYx3w": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "truien-vesten"
-          }
-        },
-        "featured_collection_dhwKqc": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "dames-truien-vesten"
-          }
-        },
-        "featured_collection_7eE8Ch": {
-          "type": "featured_collection",
-          "disabled": true,
-          "settings": {
-            "collection": "womens"
-          }
-        },
-        "featured_collection_8eU6BM": {
-          "type": "featured_collection",
-          "disabled": true,
-          "settings": {
-            "collection": "best-seller"
-          }
-        },
-        "featured_collection_h4fgg7": {
-          "type": "featured_collection",
-          "disabled": true,
-          "settings": {
-            "collection": "best-seller-1"
-          }
-        },
-        "featured_collection_LCP86D": {
-          "type": "featured_collection",
-          "disabled": true,
-          "settings": {
-            "collection": "mens"
-          }
-        },
-        "featured_collection_VQGJnU": {
-          "type": "featured_collection",
-          "disabled": true,
-          "settings": {
-            "collection": "womens"
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_Taahqm",
-        "featured_collection_tEnjrQ",
-        "featured_collection_BVYx3w",
-        "featured_collection_dhwKqc",
-        "featured_collection_7eE8Ch",
-        "featured_collection_8eU6BM",
-        "featured_collection_h4fgg7",
-        "featured_collection_LCP86D",
-        "featured_collection_VQGJnU"
-      ],
-      "settings": {
-        "title": "Womens Collecitons",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "show_view_all": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "selluxe_icon_text_F4kdPp": {
@@ -656,84 +495,20 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
-    },
-    "collapsible_content_wFRV3V": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_eChPQi": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Inklapbare rij",
-            "icon": "none",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_fmc7pT": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Inklapbare rij",
-            "icon": "none",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_zHHP6T": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Inklapbare rij",
-            "icon": "none",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_qzRJFB": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Inklapbare rij",
-            "icon": "none",
-            "row_content": "",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_eChPQi",
-        "collapsible_row_fmc7pT",
-        "collapsible_row_zHHP6T",
-        "collapsible_row_qzRJFB"
-      ],
-      "settings": {
-        "caption": "",
-        "heading": "Inklapbare content",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "color_scheme": "",
-        "container_color_scheme": "",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "slideshow_UJkzzk",
     "custom_liquid_NL4aGg",
     "custom_collection_list_TEwQDQ",
+    "custom_collection_list_LfrziL",
     "season_collection_qD74NG",
-    "collection_list_MbXpcg",
     "image_banner",
     "featured_collection",
-    "collection_list_hmp8af",
-    "collection_list_XVnLn4",
     "selluxe_icon_text_F4kdPp",
     "custom_liquid_tNh6Xq",
     "selluxe_image_slider_gPA7ir",
     "rich_text_n3aQPY",
-    "image_banner_GfDLAM",
-    "collapsible_content_wFRV3V"
+    "image_banner_GfDLAM"
   ]
 }
