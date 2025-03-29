@@ -611,3 +611,11 @@
     display: none !important;
   }
   
+  /* Override for collection card images */
+  .custom-collection-list-wrapper .card__media .media img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    object-position: center center;
+  }
+  
