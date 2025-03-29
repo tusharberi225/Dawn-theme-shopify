@@ -612,15 +612,10 @@
   }
   
   /* Override for collection card images */
-  .custom-collection-list-wrapper .card__media .media img {
-    height: auto !important;
-    width: auto !important;
-    object-fit: cover;
-    object-position: center center;
-  }
+  
   @media screen and (max-width: 749px) {
     .custom-collection-list-wrapper .collection-list__item {
-      width: 60% !important;
+      width: 55% !important;
     }
   }
   
