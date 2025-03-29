@@ -619,4 +619,47 @@
     }
   }
   
- 
+ /* Make cards taller */
+.custom-collection-list-wrapper .card__inner {
+    min-height: 300px; /* adjust height */
+  }
+  
+  /* Ensure image fills card better */
+  .custom-collection-list-wrapper .card__media .media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  /* Mobile padding */
+@media screen and (max-width: 749px) {
+    .custom-collection-list-wrapper .collection-list-wrapper {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    /* Increase card spacing */
+.custom-collection-list-wrapper .collection-list {
+    gap: 10px !important;
+  }
+  
+  }
+  
+  /* Desktop: reduce max width + spacing */
+  @media screen and (min-width: 750px) {
+    .custom-collection-list-wrapper .collection-list-wrapper {
+      padding-left: 5rem;
+      padding-right: 5rem;
+      max-width: 100%; /* use more width on desktop */
+    }
+  }
+  
+
+  /* Round cards strongly */
+.custom-collection-list-wrapper .card,
+.custom-collection-list-wrapper .card__inner,
+.custom-collection-list-wrapper .card__media .media img {
+  border-radius: 16px !important;
+  overflow: hidden;
+}
+
