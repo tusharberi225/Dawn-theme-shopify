@@ -106,14 +106,14 @@
           "type": "featured_collection",
           "settings": {
             "collection": "truien-vesten",
-            "custom_collection_image": "shopify://shop_images/oversized_t-shirts.webp"
+            "custom_collection_image": "shopify://shop_images/Slider2_classic_tshirts.jpg"
           }
         },
         "featured_collection_3KWxrg": {
           "type": "featured_collection",
           "settings": {
             "collection": "dames-truien-vesten",
-            "custom_collection_image": "shopify://shop_images/trendy_co-ords.webp"
+            "custom_collection_image": "shopify://shop_images/oversized_t-shirts.webp"
           }
         },
         "featured_collection_CJ8Ee9": {
