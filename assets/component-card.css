@@ -630,7 +630,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin: 0.9rem 0 0.4rem 0 !important;
+  margin: 0.4rem 0 0 0 !important;
   padding: 0 !important;
 }
 
@@ -648,7 +648,7 @@
 /* 📦 Card Info Block - Remove Extra Top Spacing */
 .card__information {
   width: 100%;
-  padding: 0 1rem 0.5rem 1rem !important; /* 👈 Remove top padding */
+  padding: 0 0rem 0rem 0rem !important; /* 👈 Remove top padding */
   box-sizing: border-box;
   margin: 0 !important;
 }
