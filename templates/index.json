@@ -289,17 +289,13 @@
     },
     "featured_collection": {
       "type": "featured-collection",
-      "custom_css": [
-        "H2 {text-align: center;}",
-        ".card .card__badge {position: absolute;}",
-        ".savings {display: none;}"
-      ],
+      "custom_css": [],
       "settings": {
         "title": "BESTSELLERS",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
-        "description_style": "body",
+        "description_style": "subtitle",
         "collection": "best-seller-for-home-page",
         "products_to_show": 8,
         "columns_desktop": 4,
