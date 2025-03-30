@@ -626,11 +626,11 @@
 /* 📝 Card Title - Full Width, No Overflow */
 .card__heading {
   display: block;
-  width: 100%;
+  
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin: 0.4rem 0 0 0 !important;
+  margin: 0 0rem 0.5rem 0.9rem !important;
   padding: 0 !important;
 }
 
@@ -648,7 +648,7 @@
 /* 📦 Card Info Block - Remove Extra Top Spacing */
 .card__information {
   width: 100%;
-  padding: 0 0rem 0rem 0rem !important; /* 👈 Remove top padding */
+  padding: 0.50rem 0rem 0rem 0rem !important; /* 👈 Remove top padding */
   box-sizing: border-box;
   margin: 0 !important;
 }
@@ -664,8 +664,9 @@
 .card__information .price {
   display: flex;
   align-items: center;
-  gap: 0.5rem; /* spacing between sale and compare price */
+  gap: -0.1rem; /* spacing between sale and compare price */
   flex-wrap: wrap;
+  margin: -0.5rem 0rem 0.5rem 0.9rem !important;
 }
 
 /* 💸 Sale Price - Bigger font */
