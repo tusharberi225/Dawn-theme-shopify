@@ -603,41 +603,82 @@
     clip-path: polygon(var(--shape--blob-5));
   }
 }
-/* Tushar css code*/
-/* 📝 Move Product Title to Extreme Left & Top */
-.card__heading {
-    text-align: left !important; /* Align to left */
-    width: 150%; /* Ensure full width */
-    margin: 0 !important; /* Remove any default margin */
-    padding: 0 0 0 0 !important; /* Adjust top and left padding */
-    position: absolute; /* Force positioning */
-    top: 0px; /* Move to extreme top */
-    left: 5px; /* Move to extreme left */
-    white-space: nowrap; /* Prevents line breaks */
-    overflow: hidden; /* Hides overflow text */
-    text-overflow: ellipsis; /* Shows "..." when text is too long */
-    font-size: 1.3rem;
-    line-height: 1.25rem;
-    color:#505985d9;
-}
+/* Tushar CSS – Updated for Clean Product Cards */
 
-/* 📷 Remove Space Below Image */
+/* 📷 Keep image clean and full width */
 .card__media {
-    margin: 0 !important; 
-    padding: 0 !important; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-/* 🎯 Adjust Card Layout to Remove Gaps */
+/* 🧾 Card Content Layout */
 .card__content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 0 !important;
-    margin: 0 !important;
-    position: relative; /* Keep structure intact */
+  display: flex;
+  flex-direction: column;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* 📝 Card Title - Full Width, No Overflow */
+.card__heading {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0.9rem 0 0.4rem 0 !important;
+  padding: 0 !important;
+}
+
+/* 🧷 Card Title Link - Inherits Ellipsis Rules */
+.card__heading a {
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* 📦 Card Info Block - Remove Extra Top Spacing */
+.card__information {
+  width: 100%;
+  padding: 0 1rem 0.5rem 1rem !important; /* 👈 Remove top padding */
+  box-sizing: border-box;
+  margin: 0 !important;
+}
+
+/* 🟦 Rounded corners */
+.card__inner {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+
+/* 🏷️ Price Layout - Same Line, Aligned Vertically */
+.card__information .price {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* spacing between sale and compare price */
+  flex-wrap: wrap;
+}
+
+/* 💸 Sale Price - Bigger font */
+.card__information .price .price-item--sale {
+  font-size: calc(1.25rem + 0.15rem); /* 1px larger than base */
+  font-weight: 600;
+  color: #d32f2f; /* Optional: Red tint for sales */
+}
+
+/* 🧾 Compare-at Price - Slightly Smaller */
+.card__information .price .price-item--regular {
+  font-size: 1.25rem;
+  color: #666;
+  text-decoration: line-through;
 }
 

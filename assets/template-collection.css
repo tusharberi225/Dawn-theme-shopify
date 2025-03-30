@@ -98,12 +98,5 @@
   margin-top: 1rem;
 }
 
-/* tushar css code*/
-@media screen and (max-width: 749px) {
-    .slider--tablet.grid--peek.grid--2-col-tablet-down .grid__item, 
-    .grid--peek .grid__item {
-        
-    }
-}
 
 
