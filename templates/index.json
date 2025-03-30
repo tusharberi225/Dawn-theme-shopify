@@ -289,7 +289,11 @@
     },
     "featured_collection": {
       "type": "featured-collection",
-      "custom_css": [],
+      "custom_css": [
+        "H2 {text-align: center;}",
+        ".card .card__badge {position: absolute;}",
+        ".savings {display: none;}"
+      ],
       "settings": {
         "title": "BESTSELLERS",
         "heading_size": "h1",
