@@ -1542,3 +1542,9 @@ a.product__text {
 
 
 
+.product__accordion .product__description {
+  color: inherit !important;
+}
+.rte {
+  color: inherit !important;
+}
