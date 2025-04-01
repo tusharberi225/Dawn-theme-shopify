@@ -22,7 +22,8 @@
       "type": "main-collection-product-grid",
       "custom_css": [
         "H2 {text-align: center;}",
-        ".card .card__badge {position: absolute;}"
+        ".card .card__badge {position: absolute;}",
+        ".savings {display: none;}"
       ],
       "settings": {
         "products_per_page": 16,
