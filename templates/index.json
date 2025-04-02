@@ -90,6 +90,64 @@
         "accessibility_info": ""
       }
     },
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "text_y6kQzi": {
+          "type": "text",
+          "settings": {
+            "text": "END OF WINTER SALE",
+            "text_style": "caption-with-letter-spacing"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "-50% KORTING",
+            "heading_size": "h1"
+          }
+        },
+        "text_9rjcQF": {
+          "type": "text",
+          "settings": {
+            "text": "Tijdelijke Winteropruiming, kortingen tot wel -50%",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "PRODUCTEN BEKIJKEN",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "text_y6kQzi",
+        "heading",
+        "text_9rjcQF",
+        "button"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Mens_Sweater.jpg",
+        "image_overlay_opacity": 50,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
     "custom_liquid_NL4aGg": {
       "type": "custom-liquid",
       "settings": {
@@ -227,64 +285,6 @@
       "settings": {
         "heading": "Most Popular",
         "subtext": "Check Out Now →"
-      }
-    },
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "text_y6kQzi": {
-          "type": "text",
-          "settings": {
-            "text": "END OF WINTER SALE",
-            "text_style": "caption-with-letter-spacing"
-          }
-        },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "-50% KORTING",
-            "heading_size": "h1"
-          }
-        },
-        "text_9rjcQF": {
-          "type": "text",
-          "settings": {
-            "text": "Tijdelijke Winteropruiming, kortingen tot wel -50%",
-            "text_style": "body"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "PRODUCTEN BEKIJKEN",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "text_y6kQzi",
-        "heading",
-        "text_9rjcQF",
-        "button"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/Mens_Sweater.jpg",
-        "image_overlay_opacity": 50,
-        "image_height": "large",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
       }
     },
     "featured_collection": {
@@ -484,11 +484,11 @@
   },
   "order": [
     "slideshow_UJkzzk",
+    "image_banner",
     "custom_liquid_NL4aGg",
     "custom_collection_list_TEwQDQ",
     "custom_collection_list_LfrziL",
     "season_collection_qD74NG",
-    "image_banner",
     "featured_collection",
     "selluxe_icon_text_F4kdPp",
     "custom_liquid_tNh6Xq",
