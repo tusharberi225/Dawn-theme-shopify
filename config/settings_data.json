@@ -185,7 +185,7 @@
         "settings": {
           "background": "#ffffff",
           "background_gradient": "",
-          "text": "#121212",
+          "text": "#333333",
           "button": "#121212",
           "button_label": "#ffffff",
           "secondary_button_label": "#121212",
@@ -444,7 +444,7 @@
   "platform_customizations": {
     "custom_css": [
       ".savings {color: green;}",
-      ".price--on-sale .price__sale {color: #C8102E; font-weight: bold;}",
+      ".price--on-sale .price__sale {color: #c8102e; font-weight: bold;}",
       ".card .card__badge {position: absolute;}"
     ]
   }
