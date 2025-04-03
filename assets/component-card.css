@@ -648,16 +648,13 @@
 /* 📦 Card Info Block - Remove Extra Top Spacing */
 .card__information {
   width: 100%;
-  padding: 0.50rem 0rem 0rem 0rem !important; /* 👈 Remove top padding */
+  padding: 2rem 0rem 0rem 0rem !important; /* 👈 Remove top padding */
   box-sizing: border-box;
   margin: 0 !important;
 }
 
 /* 🟦 Rounded corners */
-.card__inner {
-  border-radius: 16px;
-  overflow: hidden;
-}
+
 
 
 /* 🏷️ Price Layout - Same Line, Aligned Vertically */
@@ -682,4 +679,30 @@
   color: #666;
   text-decoration: line-through;
 }
+
+@media screen and (max-width: 749px) {
+  .featured-collection-slider .slider__slide.grid__item {
+    width: 45vw !important;
+    max-width: 45vw !important;
+    flex: 0 0 45vw !important;
+  }
+}
+@media screen and (max-width: 749px) {
+  .featured-collection-slider .slider__slide.grid__item {
+    margin-right: 12px; /* 👈 spacing between cards */
+  }
+
+  .featured-collection-slider .slider {
+    padding-left: 16px; /* 👈 spacing before first card */
+  }
+}
+
+.featured-collection-slider .card__media img {
+  width: 100% !important;
+  height: 120% !important;
+  object-fit: contain; /* 👈 instead of 'cover' */
+  object-position: center;
+  display: block;
+}
+
 
