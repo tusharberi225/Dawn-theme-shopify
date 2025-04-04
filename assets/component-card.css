@@ -683,8 +683,8 @@
 @media screen and (max-width: 749px) {
   /* 1. Mobile Slide Sizing - Only for featured collection */
   .featured-collection-slider .slider__slide.grid__item {
-    width: calc(50% - 10px) !important;
-    flex: 0 0 calc(50% - 10px) !important;
+    width: calc(55% ) !important;
+    flex: 0 0 calc(55% ) !important;
     min-width: unset !important;
   }
 
