@@ -302,7 +302,7 @@
 
 .card__heading {
   /* Adjust size based on design */
-    line-height: 1.25rem;
+    line-height: 1.4rem;
     max-width: 20ch; /* Prevent long text */
     white-space: nowrap; /* Prevents wrapping */
     overflow: hidden; /* Hides overflow */
@@ -311,7 +311,7 @@
 
 @media screen and (max-width: 400px) {
     .product-card-title, .card__heading {
-        max-width: 19ch !important;
+        max-width: 25ch !important;
     }
 }
 
@@ -626,11 +626,10 @@
 /* 📝 Card Title - Full Width, No Overflow */
 .card__heading {
   display: block;
-  
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin: 0 0rem 0.5rem 0.9rem !important;
+  margin: 0rem 0rem 0.9rem 0.9rem !important;
   padding: 0 !important;
 }
 
@@ -652,10 +651,6 @@
   box-sizing: border-box;
   margin: 0 !important;
 }
-
-/* 🟦 Rounded corners */
-
-
 
 /* 🏷️ Price Layout - Same Line, Aligned Vertically */
 .card__information .price {
@@ -679,30 +674,19 @@
   color: #666;
   text-decoration: line-through;
 }
+.savings {
+  display: none !important;
+}
 
+
+/* Featured Collection Specific Styles */
 @media screen and (max-width: 749px) {
+  /* 1. Mobile Slide Sizing - Only for featured collection */
   .featured-collection-slider .slider__slide.grid__item {
-    width: 45vw !important;
-    max-width: 45vw !important;
-    flex: 0 0 45vw !important;
-  }
-}
-@media screen and (max-width: 749px) {
-  .featured-collection-slider .slider__slide.grid__item {
-    margin-right: 12px; /* 👈 spacing between cards */
+    width: calc(50% - 10px) !important;
+    flex: 0 0 calc(50% - 10px) !important;
+    min-width: unset !important;
   }
 
-  .featured-collection-slider .slider {
-    padding-left: 16px; /* 👈 spacing before first card */
-  }
+  
 }
-
-.featured-collection-slider .card__media img {
-  width: 100% !important;
-  height: 120% !important;
-  object-fit: contain; /* 👈 instead of 'cover' */
-  object-position: center;
-  display: block;
-}
-
-
