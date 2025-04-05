@@ -78,6 +78,7 @@
         "slide_iaLExd",
         "slide_FAJenr"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "layout": "full_bleed",
@@ -133,7 +134,6 @@
         "text_9rjcQF",
         "button"
       ],
-      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Mens_Sweater.jpg",
         "image_overlay_opacity": 50,
@@ -239,7 +239,6 @@
         "featured_collection_AV73fC",
         "featured_collection_yppPAh"
       ],
-      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -247,7 +246,7 @@
         "columns_desktop": 2,
         "color_scheme": "",
         "show_view_all": false,
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 20,
         "padding_bottom": 20
