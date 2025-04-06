@@ -25,7 +25,7 @@
           "type": "heading",
           "settings": {
             "heading": "<strong>{{ collection.metafields.custom.collection_name.value }}</strong>",
-            "heading_size": "h0"
+            "heading_size": "h1"
           }
         }
       },
