@@ -222,15 +222,15 @@
         "featured_collection_AV73fC": {
           "type": "featured_collection",
           "settings": {
-            "collection": "truien-vesten",
-            "custom_collection_image": "shopify://shop_images/758ec57fcb1f9f030fe45483fff247aa817c75a3-750x750.webp"
+            "collection": "mens-chinos",
+            "custom_collection_image": "shopify://shop_images/4_0ef8d27d-20a6-46e5-9130-a786d841c074.png"
           }
         },
         "featured_collection_yppPAh": {
           "type": "featured_collection",
           "settings": {
-            "collection": "dames-truien-vesten",
-            "custom_collection_image": "shopify://shop_images/c776d0b9a226f0907a3479bbb19728dd94c07206-750x750.webp"
+            "collection": "mens-co-ord-set",
+            "custom_collection_image": "shopify://shop_images/9_d289deca-4479-4dda-b79b-8c9ac3d9db5b.png"
           }
         }
       },
@@ -239,7 +239,7 @@
         "featured_collection_yppPAh"
       ],
       "settings": {
-        "title": "",
+        "title": "Women's Collection",
         "heading_size": "h1",
         "image_ratio": "portrait",
         "columns_desktop": 2,
