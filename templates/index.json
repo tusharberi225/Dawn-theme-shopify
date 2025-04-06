@@ -117,7 +117,6 @@
         },
         "button": {
           "type": "buttons",
-          "disabled": true,
           "settings": {
             "button_label_1": "PRODUCTEN BEKIJKEN",
             "button_link_1": "shopify://collections/all",
