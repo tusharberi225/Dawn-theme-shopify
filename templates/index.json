@@ -194,6 +194,9 @@
         "featured_collection_Kg8C4F",
         "featured_collection_TUU6Hh"
       ],
+      "custom_css": [
+        ".collection-list-title {text-align: center;}"
+      ],
       "settings": {
         "title": "HERENMODE",
         "heading_size": "h1",
@@ -238,6 +241,7 @@
         "featured_collection_AV73fC",
         "featured_collection_yppPAh"
       ],
+      "custom_css": [],
       "settings": {
         "title": "DAMESMODE",
         "heading_size": "h1",
