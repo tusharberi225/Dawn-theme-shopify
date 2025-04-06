@@ -1577,3 +1577,37 @@ a.product__text {
     margin: 5px 0px 10px 0px;
   }
 }
+/* Match competitor's clean left-aligned style */
+.product__accordion .accordion__content,
+.product__description,
+.product__accordion .accordion__content .rte,
+.product__description .rte,
+.product__description p,
+.product__description li {
+  font-size: 12px !important;
+  line-height: 19.2px !important;
+  letter-spacing: 0.6px !important;
+  font-family: "system-ui", "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif !important;
+  color: #000 !important;
+  margin: 0 0 10px 0 !important;
+  padding: 0 !important;
+  box-sizing: content-box !important;
+  text-align: left !important; /* ✅ This ensures left alignment */
+}
+
+/* Fixing bullet list layout */
+.product__description ul {
+  padding-left: 1.6rem !important;
+  margin: 0 0 1rem 0 !important;
+  list-style-position: outside !important;
+}
+
+.product__description li {
+  margin-bottom: 0.5rem !important;
+  padding-left: 0.4rem !important;
+  line-height: 19.2px !important;
+  font-size: 12px !important;
+  letter-spacing: 0.6px !important;
+  list-style-type: disc !important;
+  text-align: left !important;
+}
