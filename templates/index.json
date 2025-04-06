@@ -176,7 +176,7 @@
         "featured_collection_Kg8C4F": {
           "type": "featured_collection",
           "settings": {
-            "collection": "trousers",
+            "collection": "mens-chinos",
             "custom_collection_image": "shopify://shop_images/6_3feea2a1-1749-4324-bd3c-7d4ba0a82e9c.png"
           }
         },
@@ -193,9 +193,6 @@
         "featured_collection_3KWxrg",
         "featured_collection_Kg8C4F",
         "featured_collection_TUU6Hh"
-      ],
-      "custom_css": [
-        ".collection-list-title {text-align: center;}"
       ],
       "settings": {
         "title": "HERENMODE",
@@ -241,7 +238,6 @@
         "featured_collection_AV73fC",
         "featured_collection_yppPAh"
       ],
-      "custom_css": [],
       "settings": {
         "title": "DAMESMODE",
         "heading_size": "h1",
