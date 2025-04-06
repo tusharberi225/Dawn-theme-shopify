@@ -89,7 +89,7 @@
           "settings": {
             "heading": "VERZENDINFORMATIE",
             "icon": "none",
-            "content": "<p>🚛 <strong>Gratis verzending</strong> binnen Nederland & België<br/>⏳ Levertijd: <strong>4-8 werkdagen</strong><br/>📮 Verzonden via PostNL, DHL en Bpost<br/>📩 Track & Trace beschikbaar<br/>📞 Klantenservice <strong>24/7</strong></p>",
+            "content": "<ul><li>Gratis verzending binnen Nederland & België</li><li>Geschatte levertijd: 4-8 werkdagen</li><li>Bestellingen worden verzonden via PostNL, DHL of Bpost</li><li>Track & Trace beschikbaar bij elke bestelling</li><li>24/7 Klantenservice</li><li>Voor meer informatie kunt u onze <a href=\"https://vanleidenstijl.nl/pages/shipping\" title=\"https://vanleidenstijl.nl/pages/shipping\"><strong>Verzendinformatie</strong></a> pagina bekijken.</li></ul><p></p>",
             "page": ""
           }
         },
@@ -98,7 +98,7 @@
           "settings": {
             "heading": "14 DAGEN GEMAKKELIJK RETOURNEREN",
             "icon": "none",
-            "content": "<p>🛍️ <strong>14</strong> dagen retourbeleid<br/>💰<strong> Geld-terug garantie</strong><br/>🔄 Eenvoudige ruiloptie<br/>✔️ Geen verborgen kosten<br/><strong>📞 Vragen? Wij helpen je graag!</strong></p>",
+            "content": "<ul><li>14 dagen retourbeleid.</li><li>Geld-terug garantie.</li><li>Eenvoudige ruiloptie.</li><li>Geen verborgen kosten.</li><li>Vragen? Wij helpen je graag!</li><li>Voor meer informatie, inclusief ons klantenservice e-mailadres, bezoek dan onze <a href=\"https://vanleidenstijl.nl/pages/return-policy\" title=\"https://vanleidenstijl.nl/pages/return-policy\">Retouren & Ruilen</a> pagina.</li></ul>",
             "page": ""
           }
         }
