@@ -134,8 +134,8 @@
         "button"
       ],
       "settings": {
-        "image": "shopify://shop_images/Banners_1.png",
-        "image_overlay_opacity": 20,
+        "image": "shopify://shop_images/ChatGPT_Image_Apr_6_2025_06_46_19_PM.png",
+        "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
@@ -159,18 +159,18 @@
     "custom_collection_list_TEwQDQ": {
       "type": "custom-collection-list",
       "blocks": {
-        "featured_collection_3KWxrg": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "truien-vesten",
-            "custom_collection_image": "shopify://shop_images/10_1ccd17a6-1325-4814-90e7-0cda3bb145fe.png"
-          }
-        },
         "featured_collection_CJ8Ee9": {
           "type": "featured_collection",
           "settings": {
             "collection": "polos-t-shirts",
             "custom_collection_image": "shopify://shop_images/11_ded24bc5-63a6-402d-a796-5301c2d42443.png"
+          }
+        },
+        "featured_collection_3KWxrg": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "truien-vesten",
+            "custom_collection_image": "shopify://shop_images/10_1ccd17a6-1325-4814-90e7-0cda3bb145fe.png"
           }
         },
         "featured_collection_Kg8C4F": {
@@ -189,8 +189,8 @@
         }
       },
       "block_order": [
-        "featured_collection_3KWxrg",
         "featured_collection_CJ8Ee9",
+        "featured_collection_3KWxrg",
         "featured_collection_Kg8C4F",
         "featured_collection_TUU6Hh"
       ],
