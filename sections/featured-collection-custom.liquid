@@ -16,8 +16,13 @@
       {%- for product in collection.products limit: products_to_display -%}
         <div class="custom-product-card">
           <a href="{{ product.url }}" class="custom-product-image">
-            <img src="{{ product.featured_image | image_url: width: 500 }}" alt="{{ product.title }}">
+            <img 
+              src="{{ product.featured_image | image_url: width: 500 }}" 
+              alt="{{ product.title }}" 
+              width="{{ product.featured_image.width }}" 
+              height="{{ product.featured_image.height }}">
           </a>
+ 
           <div class="custom-product-info">
             <h3 class="product-title">
               <a href="{{ product.url }}">{{ product.title }}</a>
