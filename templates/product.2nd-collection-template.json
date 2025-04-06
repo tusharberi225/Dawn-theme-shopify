@@ -160,9 +160,7 @@
     },
     "featured_collection_HBqabY": {
       "type": "featured-collection",
-      "custom_css": [
-        "h2 {text-align: center; font-weight: 600; font-size: 25px !important;}"
-      ],
+      "custom_css": [],
       "settings": {
         "title": "Misschien vind je dit leuk",
         "heading_size": "h1",
@@ -200,6 +198,7 @@
     },
     "featured_collection_rxGJNG": {
       "type": "featured-collection",
+      "custom_css": [],
       "settings": {
         "title": "Misschien vind je dit leuk",
         "heading_size": "h1",
