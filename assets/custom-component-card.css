@@ -663,3 +663,6 @@
   overflow: hidden;
 }
 
+.collection__title .title {
+  text-align: center !important;
+}

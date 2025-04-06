@@ -1,6 +1,7 @@
 {
     "version": "0.2.0",
     "configurations": [
+
       {
         "name": "Launch Shopify Theme (Port 8080)",
         "type": "chrome",
@@ -18,7 +19,16 @@
         "webRoot": "${workspaceFolder}",
         "sourceMaps": true,
         "trace": true
-      }
+      },
+      {
+      "name": "Launch Shopify Theme (Port 9292)",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:9292",
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true,
+      "trace": true
+    }
     ]
   }
   

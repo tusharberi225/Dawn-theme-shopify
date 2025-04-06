@@ -59,4 +59,8 @@
   .collection-list-view-all {
     margin-top: 2rem;
   }
-  
+  /* Center the title in custom collection list */
+.collection-list-wrapper .collection-list-title {
+  text-align: center !important;
+  width: 100%;
+}
