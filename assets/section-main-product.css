@@ -1548,3 +1548,32 @@ a.product__text {
 .rte {
   color: inherit !important;
 }
+
+.savings {
+  background: #eaf9e9;
+  color: #00a65a;
+  border-radius: 6px;
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: unset;
+  padding: 3px;
+  letter-spacing: 0.45px;
+}
+@media screen and (max-width: 749px) {
+  .product .grid__item .product__media-list .product__media-item {
+    margin: 0;
+    width: 100%;
+    padding-top: 0;
+  }
+  .price-item--sale {
+    font-weight: 550 !important;
+    font-size: 20px !important;
+  }
+  .price-item--regular {
+    font-weight: 400 !important;
+    font-size: 16px !important;
+  }
+  h3.Vtl-VolumeDiscountRadio__Name {
+    margin: 5px 0px 10px 0px;
+  }
+}
