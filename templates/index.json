@@ -159,40 +159,40 @@
     "custom_collection_list_TEwQDQ": {
       "type": "custom-collection-list",
       "blocks": {
-        "featured_collection_TUU6Hh": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "mens-jeans",
-            "custom_collection_image": "shopify://shop_images/3_d10cbff9-a594-4c5d-837f-fe79f31a51df.webp"
-          }
-        },
         "featured_collection_3KWxrg": {
           "type": "featured_collection",
           "settings": {
-            "collection": "dames-truien-vesten",
-            "custom_collection_image": "shopify://shop_images/oversized_t-shirts.webp"
+            "collection": "truien-vesten",
+            "custom_collection_image": "shopify://shop_images/10_1ccd17a6-1325-4814-90e7-0cda3bb145fe.png"
           }
         },
         "featured_collection_CJ8Ee9": {
           "type": "featured_collection",
           "settings": {
-            "collection": "truien-vesten",
-            "custom_collection_image": "shopify://shop_images/travel_essentials.webp"
+            "collection": "polos-t-shirts",
+            "custom_collection_image": "shopify://shop_images/11_ded24bc5-63a6-402d-a796-5301c2d42443.png"
           }
         },
         "featured_collection_Kg8C4F": {
           "type": "featured_collection",
           "settings": {
-            "collection": "dames-truien-vesten",
-            "custom_collection_image": "shopify://shop_images/Slider2_classic_tshirts.jpg"
+            "collection": "trousers",
+            "custom_collection_image": "shopify://shop_images/6_3feea2a1-1749-4324-bd3c-7d4ba0a82e9c.png"
+          }
+        },
+        "featured_collection_TUU6Hh": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mens-jeans",
+            "custom_collection_image": "shopify://shop_images/3_36850928-4423-480d-9c58-f92a67420b9e.png"
           }
         }
       },
       "block_order": [
-        "featured_collection_TUU6Hh",
         "featured_collection_3KWxrg",
         "featured_collection_CJ8Ee9",
-        "featured_collection_Kg8C4F"
+        "featured_collection_Kg8C4F",
+        "featured_collection_TUU6Hh"
       ],
       "settings": {
         "title": "Collecties",
@@ -246,7 +246,7 @@
         "color_scheme": "",
         "show_view_all": false,
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 20,
         "padding_bottom": 20
       }
