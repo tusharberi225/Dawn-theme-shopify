@@ -97,28 +97,28 @@
         "text_y6kQzi": {
           "type": "text",
           "settings": {
-            "text": "END OF WINTER SALE",
+            "text": "Spring Sale",
             "text_style": "caption-with-letter-spacing"
           }
         },
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "-50% KORTING",
+            "heading": "TOT 60% KORTING",
             "heading_size": "h1"
           }
         },
         "text_9rjcQF": {
           "type": "text",
           "settings": {
-            "text": "Tijdelijke Winteropruiming, kortingen tot wel -50%",
+            "text": "New Season, Fresh Start",
             "text_style": "body"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "PRODUCTEN BEKIJKEN",
+            "button_label_1": "SHOP NU",
             "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
@@ -134,7 +134,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify://shop_images/Mens_Sweater.jpg",
+        "image": "shopify://shop_images/ChatGPT_Image_Apr_6_2025_06_30_41_PM.png",
         "image_overlay_opacity": 50,
         "image_height": "large",
         "desktop_content_position": "middle-center",
