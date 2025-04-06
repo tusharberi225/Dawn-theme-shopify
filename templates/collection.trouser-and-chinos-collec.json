@@ -1,0 +1,81 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "image_banner_kre7yg": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_DjP3wi": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.metafields.custom.collection_name.value }}",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "heading_DjP3wi"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/OPTION_1_DESKTOP_866cf2cd-531c-45ac-8729-4c2a521bb3e9.webp",
+        "image_2": "shopify://shop_images/OPTION_1_DESKTOP_866cf2cd-531c-45ac-8729-4c2a521bb3e9.webp",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "custom_css": [
+        "H2 {text-align: center;}",
+        ".card .card__badge {position: absolute;}",
+        ".savings {display: none;}"
+      ],
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "image_banner_kre7yg",
+    "product-grid"
+  ]
+}
