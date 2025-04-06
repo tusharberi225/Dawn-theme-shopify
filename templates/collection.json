@@ -24,8 +24,8 @@
         "heading_DjP3wi": {
           "type": "heading",
           "settings": {
-            "heading": "{{ collection.metafields.custom.collection_name.value }}",
-            "heading_size": "hxxl"
+            "heading": "<strong>{{ collection.metafields.custom.collection_name.value }}</strong>",
+            "heading_size": "h0"
           }
         }
       },
