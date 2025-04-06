@@ -134,8 +134,8 @@
         "button"
       ],
       "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_Apr_6_2025_06_46_19_PM.png",
-        "image_overlay_opacity": 0,
+        "image": "shopify://shop_images/Banners_1.png",
+        "image_overlay_opacity": 40,
         "image_height": "large",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
