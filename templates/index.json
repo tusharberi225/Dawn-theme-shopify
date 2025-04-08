@@ -323,8 +323,8 @@
         "show_rating": false,
         "quick_add": "none",
         "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 8,
+        "swipe_on_mobile": false,
+        "padding_top": 28,
         "padding_bottom": 28
       }
     },
