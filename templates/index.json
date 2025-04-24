@@ -222,15 +222,15 @@
         "featured_collection_AV73fC": {
           "type": "featured_collection",
           "settings": {
-            "collection": "mens-chinos",
-            "custom_collection_image": "shopify://shop_images/4_0ef8d27d-20a6-46e5-9130-a786d841c074.png"
+            "collection": "koord-set",
+            "custom_collection_image": "shopify://shop_images/11_4adb1be2-6072-4e7a-877e-e1f937cb8fb0.png"
           }
         },
         "featured_collection_yppPAh": {
           "type": "featured_collection",
           "settings": {
-            "collection": "mens-co-ord-set",
-            "custom_collection_image": "shopify://shop_images/9_d289deca-4479-4dda-b79b-8c9ac3d9db5b.png"
+            "collection": "women-collection-1",
+            "custom_collection_image": "shopify://shop_images/12_2ace4450-4071-4296-985a-79a67e704335.png"
           }
         }
       },
@@ -238,7 +238,6 @@
         "featured_collection_AV73fC",
         "featured_collection_yppPAh"
       ],
-      "disabled": true,
       "settings": {
         "title": "DAMES",
         "heading_size": "h1",
@@ -290,7 +289,6 @@
         "banner_gypinm",
         "banner_rE4TFV"
       ],
-      "disabled": true,
       "settings": {
         "heading": "Most Popular",
         "subtext": "Check Out Now →"
