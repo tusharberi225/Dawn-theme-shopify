@@ -200,39 +200,6 @@
         "padding_bottom": 0
       }
     },
-    "featured_collection_QEj64e": {
-      "type": "featured-collection",
-      "custom_css": [
-        "H2 {text-align: center; font-size: 20px; font-weight: 600;}",
-        ".card .card__badge {position: absolute;}",
-        ".savings {display: none;}"
-      ],
-      "settings": {
-        "title": "KLANTEN BEKEKEN OOK",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "{{ product.metafields.custom.second_collection.value }}",
-        "products_to_show": 25,
-        "columns_desktop": 4,
-        "full_width": true,
-        "show_view_all": false,
-        "view_all_style": "link",
-        "enable_desktop_slider": true,
-        "color_scheme": "",
-        "image_ratio": "portrait",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 32,
-        "padding_bottom": 32
-      }
-    },
     "custom_liquid_kjdkKm": {
       "type": "custom-liquid",
       "settings": {
@@ -240,39 +207,6 @@
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0
-      }
-    },
-    "featured_collection_QxWBCY": {
-      "type": "featured-collection",
-      "custom_css": [
-        "H2 {text-align: center; font-size: 20px; font-weight: 600;}",
-        ".card .card__badge {position: absolute;}",
-        ".savings {display: none;}"
-      ],
-      "settings": {
-        "title": "Uitgelichte collectie",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "{{ product.metafields.custom.third_collection.value }}",
-        "products_to_show": 25,
-        "columns_desktop": 4,
-        "full_width": true,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": true,
-        "color_scheme": "",
-        "image_ratio": "portrait",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "aus_tp_slider_qaxzDr": {
@@ -389,9 +323,7 @@
     "related-products",
     "featured_collection_HBqabY",
     "custom_liquid_7YjwUG",
-    "featured_collection_QEj64e",
     "custom_liquid_kjdkKm",
-    "featured_collection_QxWBCY",
     "aus_tp_slider_qaxzDr",
     "custom_liquid_GazHa7",
     "selluxe_icon_text_TR8fzg"
