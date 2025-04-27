@@ -119,7 +119,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "SHOP NU",
-            "button_link_1": "shopify://collections/all",
+            "button_link_1": "shopify://collections/polos-t-shirts",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
