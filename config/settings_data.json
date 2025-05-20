@@ -192,6 +192,13 @@
           "button_vertical_position": "lowest",
           "greeting_message": ""
         }
+      },
+      "1530068250781986104": {
+        "type": "shopify://apps/fbp-fast-bundle/blocks/fast_bundle/9e87fbe2-9041-4c23-acf5-322413994cef",
+        "disabled": false,
+        "settings": {
+          "home": false
+        }
       }
     },
     "color_schemes": {
